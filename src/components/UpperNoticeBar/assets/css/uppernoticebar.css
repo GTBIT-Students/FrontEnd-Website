@@ -1,0 +1,49 @@
+.UpperBarContainer {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+.UpperContainerGrid {
+  display: grid;
+  gap: 0.5em;
+  padding: 0.4em 0;
+  grid-template-columns: 1fr auto;
+}
+.Running-Line {
+  padding: 0.2em 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.search-box-container {
+  display: inline-block;
+}
+.RightContainer-Upper-Hide{
+  display: none;
+}
+.SearchImage {
+  height: 1em;
+}
+.UpperBar-LoginBtn {
+  padding: 0.2em 0.6em;
+  border-radius: 5px;
+  margin: 0 0.2em;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.UpperBar-LoginBtn-active{
+  box-shadow: inset 0 0 10px 3px var(--lightShadow);
+}
+.UpperBar-LoginBtn:hover {
+  box-shadow: inset 0 0 10px 3px var(--lightShadow);
+}
+.UpperBar-LoginBtn:active {
+  transform: scale(0.95);
+}
+marquee > b{
+  text-shadow: 0 0 3px red;
+}
+@media screen and (max-width: 800px) {
+  .display-after-992 {
+    display: none;
+  }
+}
