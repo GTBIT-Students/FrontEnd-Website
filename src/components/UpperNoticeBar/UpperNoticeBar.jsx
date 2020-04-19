@@ -17,7 +17,13 @@ class UpperNoticeBar extends Component {
   };
 
   componentDidMount = () => {
-    axios.get(`${API_Domain.route}/api/v1/upper-notice`).then((data) => {
+    axios({
+      url: `${API_Domain.route}/api/v1/upper-notice`,
+      method: "GET",
+      headers: {
+        Authorization: "Token 5292645558db342649f9c41b50edd7db560962d2",
+      },
+    }).then((data) => {
       if (
         data.data.current_notice[0].notice === "" ||
         data.data.current_notice[0].notice === null
@@ -28,6 +34,21 @@ class UpperNoticeBar extends Component {
         this.setState({ notice: data.data.current_notice[0].notice });
       }
     });
+
+    axios({
+      url: `${API_Domain.route}/api/v1/event-list`,
+      method: "GET",
+      headers: {
+        Authorization: "Token 5292645558db342649f9c41b50edd7db560962d2",
+      },
+      // data: {
+      //   event_name: "HELLO",
+      //   event_link: "THIS",
+      //   event_date: "IS",
+      //   event_time: "AN",
+      //   event_venue: "EVENT",
+      // },
+    }).then((data) => console.log(data.data));
   };
 
   render() {
