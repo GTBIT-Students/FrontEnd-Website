@@ -6,18 +6,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--white);
-  /* --primaryColor: #3f729b; */
-  --primaryColor: #1a73e8;
-  --secondaryColor: #e86d1a;
-  --tertiaryColor: #e8d31a;
-  --quaternaryColor: #bb1ae8;
+  --primaryColor: #fcc419;
+  --secondaryColor: #e8590c;
+  --secondaryToned: #fe7018;
   --white: #ffffff;
-  --black: #000;
-  --lightBlack: #444;
+  --black: #212529;
   --lightShadow: rgba(0, 0, 0, 0.15);
-  --footerBackground: #f8f9fa;
-  --TextDark: #2f3236;
-  --TextLight: #87878a;
 }
 .spacing-5 {
   padding: 2.5em 0;
