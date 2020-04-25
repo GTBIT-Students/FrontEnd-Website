@@ -1,0 +1,124 @@
+.navbar-dropdown-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: var(--black);
+  z-index: 10;
+}
+.navbar-dropdown-container {
+  position: absolute;
+  width: 100%;
+  background-color: var(--white);
+  color: var(--black);
+  z-index: 11;
+  padding: 1em 0;
+  animation: fadeUp 0.5s ease-in-out 1 forwards;
+}
+.navbar-dropdown-container::-webkit-scrollbar {
+  width: 5px;
+}
+.navbar-dropdown-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar-dropdown-login-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5em;
+}
+.navbar-login-container-element {
+}
+.navbar-login-heading {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5em;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+.justifyCenter-btn {
+  display: none;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-nav-expand-btn {
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.mobile-nav-expand-btn-inner {
+  height: 2.5px;
+  width: 16px;
+  background-color: var(--black);
+}
+.mobile-nav-expand-btn::after {
+  content: "";
+  height: 2px;
+  width: 14px;
+  display: block;
+  transform: translate(1px, -2.5px) rotate(90deg);
+  background-color: var(--black);
+  transition: 0.2s;
+  opacity: 1;
+}
+.mobile-nav-expand-btn-tap::after {
+  opacity: 0;
+}
+.navbar-login-content {
+  color: var(--black);
+  font-weight: 300;
+  margin: 1em 0;
+  margin-bottom: 2em;
+}
+.nav-bar-login-btn-container {
+  margin: 1em 0;
+}
+a.nav-bar-login-btn {
+  padding: 0.5em 1.5em;
+  background-color: var(--secondaryColor);
+  color: var(--white);
+  border-radius: 3px;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.nav-bar-login-btn:hover {
+  filter: brightness(0.9);
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-dropdown-login-grid {
+    gap: 2em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar-dropdown-container {
+    padding: 0.5em 0;
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding: 1em 0;
+  }
+  .navbar-dropdown-login-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .mobile-navigation-content-hide {
+    display: none;
+  }
+  .justifyCenter-btn {
+    display: flex;
+  }
+}

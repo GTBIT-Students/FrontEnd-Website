@@ -48,7 +48,7 @@ class UpperNoticeBar extends Component {
     return (
       <>
         {this.state.componentVisibility ? (
-          <div className="UpperBarContainer">
+          <div id="UpperBarContainer" className="UpperBarContainer">
             <div className="container-big">
               <div className="UpperContainerGrid">
                 <div className="Running-Line">

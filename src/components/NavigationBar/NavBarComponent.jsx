@@ -1,20 +1,31 @@
 import React, { Component } from "react";
+import LoginNavbarComponent from "./LoginNavbarComponent";
+import AboutNavbarComponent from "./AboutNavbarComponent";
+import DiscoverNavbarComponent from "./DiscoverNavbarComponent";
 
-class NavBarComponent extends Component {
+class NavbarComponent extends Component {
   state = {};
-  componentDidMount = () => {
-    const onCallProperty = this.props.onCall;
-    console.log(onCallProperty.isOpened);
-    console.log(onCallProperty.top);
-    console.log(onCallProperty.component);
-  };
   render() {
     return (
       <>
-        <h1>Navbar</h1>
+        {this.props.onCall.component === "discover" ? (
+          <DiscoverNavbarComponent onCall={this.props.onCall} />
+        ) : (
+          ""
+        )}
+        {this.props.onCall.component === "about" ? (
+          <AboutNavbarComponent onCall={this.props.onCall} />
+        ) : (
+          ""
+        )}
+        {this.props.onCall.component === "login" ? (
+          <LoginNavbarComponent onCall={this.props.onCall} />
+        ) : (
+          ""
+        )}
       </>
     );
   }
 }
 
-export default NavBarComponent;
+export default NavbarComponent;

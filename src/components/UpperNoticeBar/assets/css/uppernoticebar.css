@@ -1,4 +1,6 @@
 .UpperBarContainer {
+  position: relative;
+  z-index: 11;
   background-color: var(--primaryColor);
   color: var(--black);
 }
