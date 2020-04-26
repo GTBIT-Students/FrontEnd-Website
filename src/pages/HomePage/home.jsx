@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //import UpperNoticeBar from "../../components/UpperNoticeBar/UpperNoticeBar";
 //import NavigationBar from "../../components/NavigationBar/NavigationBar";
-//import Carousel from "../../components/Carousels/carousel";
+import Carousel from "../../components/Carousels/carousel";
 //import Footer from "../../components/footer/footer";
 import "./assets/css/home.css";
 
@@ -12,8 +12,8 @@ class Home extends Component {
       <>
         <div>
           {/* <UpperNoticeBar />
-          <NavigationBar />
-          <Carousel /> */}
+          <NavigationBar /> */}
+          <Carousel />
           <div style={{ height: "5em" }}></div>
           <div className="container-big">
             <h1>Content</h1>

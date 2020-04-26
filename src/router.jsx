@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "./assets/css/default.css";
-import Home from "./pages/HomePage/home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./assets/css/default.css";
 import UpperNoticeBar from "./components/UpperNoticeBar/UpperNoticeBar";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
-import Carousel from "./components/Carousels/carousel";
-
 import Footer from "./components/footer/footer";
+import Home from "./pages/HomePage/home";
+import Society from "./pages/Society/Society";
+
 
 class Routes extends Component {
   state = {};
@@ -15,9 +15,10 @@ class Routes extends Component {
       <Router>
         <UpperNoticeBar />
         <NavigationBar />
-        <Carousel />
+       
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/society" component={Society} />
         </Switch>
         <Footer />
       </Router>
