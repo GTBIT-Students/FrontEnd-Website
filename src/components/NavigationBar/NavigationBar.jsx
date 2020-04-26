@@ -3,7 +3,7 @@ import "./assets/css/navbar.css";
 import "./assets/css/logo-text-animation.css";
 import { Link } from "react-router-dom";
 import GTBITLOGO from "../../assets/images/gtbitlogo-old.png";
-import NavBarComponent from "./NavbarComponent";
+import NavBarComponent from "./NavBarComponent";
 
 class NavigationBar extends Component {
   state = {
