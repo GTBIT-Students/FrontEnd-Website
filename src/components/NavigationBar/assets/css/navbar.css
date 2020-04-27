@@ -6,7 +6,7 @@
   color: var(--black);
   padding: 0.2em 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
-  z-index: 16;
+  z-index: 20;
 }
 .navbar-container-scrolled {
   background-color: var(--black);
@@ -110,6 +110,12 @@
 }
 .navbar-right-link-ham-menu-scroll .navbar-right-link-ham-menu-inner {
   background-color: var(--white);
+}
+a.navbar-right-links-active-onclick {
+  color: var(--primaryColor);
+}
+.navbar-img-arrow {
+  transform: translateY(-3px);
 }
 @media screen and (max-width: 1200px) {
   .navbar-right-links a {
