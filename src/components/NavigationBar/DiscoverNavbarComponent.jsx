@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./assets/css/navbar-component.css";
 
 class DiscoverNavbarComponent extends Component {
   state = {
@@ -31,17 +30,18 @@ class DiscoverNavbarComponent extends Component {
   render() {
     return (
       <>
-        <div className="navbar-dropdown-overlay"></div>
         <div
           className="navbar-dropdown-container"
           style={this.style.dropDownPosition}
         >
           <div className="container-big">
             {this.props.onCall.component === "discover" ? (
-              <div className="navbar-dropdown-login-grid">
+              <div className="navbar-dropdown-discover-grid">
                 <div className="navbar-login-container-element">
                   <div className="navbar-login-heading">
-                    <div>Admin Login</div>
+                    <div onClick={() => this.expandNavbar("login", 1)}>
+                      Campus Life
+                    </div>
                     <div
                       className="justifyCenter-btn"
                       onClick={() => this.expandNavbar("login", 1)}
@@ -68,24 +68,19 @@ class DiscoverNavbarComponent extends Component {
                         : "mobile-navigation-content-hide"
                     }`}
                   >
-                    <div className={`navbar-login-content`}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deleniti, voluptate facilis voluptas quam velit quisquam
-                      dolorem provident nam sed, molestiae, praesentium
-                      repellat. Hic expedita delectus est repudiandae doloremque
-                      fugit sit.
-                      <br />
-                    </div>
-                    <div className="nav-bar-login-btn-container">
-                      <Link to="#" className="nav-bar-login-btn">
-                        Login
-                      </Link>
+                    <div className={`navbar-discover-content`}>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">GATES - Annual Fest of GTBIT</Link>
+                      <Link to="#">Lorem ipsum</Link>
                     </div>
                   </div>
                 </div>
                 <div className="navbar-login-container-element">
                   <div className="navbar-login-heading">
-                    <div>Teachers Login</div>
+                    <div onClick={() => this.expandNavbar("login", 2)}>
+                      Facilities
+                    </div>
                     <div
                       className="justifyCenter-btn"
                       onClick={() => this.expandNavbar("login", 2)}
@@ -112,24 +107,22 @@ class DiscoverNavbarComponent extends Component {
                         : "mobile-navigation-content-hide"
                     }`}
                   >
-                    <div className={`navbar-login-content`}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deleniti, voluptate facilis voluptas quam velit quisquam
-                      dolorem provident nam sed, molestiae, praesentium
-                      repellat. Hic expedita delectus est repudiandae doloremque
-                      fugit sit.
-                      <br />
-                    </div>
-                    <div className="nav-bar-login-btn-container">
-                      <Link to="#" className="nav-bar-login-btn">
-                        Login
+                    <div className={`navbar-discover-content`}>
+                      <Link to="#">Medical Counsellor</Link>
+                      <Link to="#">Computing Facilities</Link>
+                      <Link to="#">Labs Rooms</Link>
+                      <Link to="#">Library and Book Bank</Link>
+                      <Link to="#">
+                        Industry Institute Partnership Cell (IIPC)
                       </Link>
                     </div>
                   </div>
                 </div>
                 <div className="navbar-login-container-element">
                   <div className="navbar-login-heading">
-                    <div>Students Login</div>
+                    <div onClick={() => this.expandNavbar("login", 3)}>
+                      Departments
+                    </div>
                     <div
                       className="justifyCenter-btn"
                       onClick={() => this.expandNavbar("login", 3)}
@@ -156,18 +149,130 @@ class DiscoverNavbarComponent extends Component {
                         : "mobile-navigation-content-hide"
                     }`}
                   >
-                    <div className={`navbar-login-content`}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deleniti, voluptate facilis voluptas quam velit quisquam
-                      dolorem provident nam sed, molestiae, praesentium
-                      repellat. Hic expedita delectus est repudiandae doloremque
-                      fugit sit.
-                      <br />
-                    </div>
-                    <div className="nav-bar-login-btn-container">
-                      <Link to="#" className="nav-bar-login-btn">
-                        Login
+                    <div className={`navbar-discover-content`}>
+                      <Link to="#">Computer Science Department</Link>
+                      <Link to="#">Information Technology Department</Link>
+                      <Link to="#">
+                        Electronics and Communication Department
                       </Link>
+                      <Link to="#">Electrical and Electronics Department</Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-login-container-element">
+                  <div className="navbar-login-heading">
+                    <div onClick={() => this.expandNavbar("login", 4)}>
+                      Important Links
+                    </div>
+                    <div
+                      className="justifyCenter-btn"
+                      onClick={() => this.expandNavbar("login", 4)}
+                    >
+                      <div
+                        className={`mobile-nav-expand-btn ${
+                          !this.state.isOpened.value
+                            ? ""
+                            : this.state.isOpened.id === "login-4"
+                            ? "mobile-nav-expand-btn-tap"
+                            : ""
+                        }`}
+                      >
+                        <div className="mobile-nav-expand-btn-inner"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={`${
+                      !this.state.isOpened.value
+                        ? "mobile-navigation-content-hide"
+                        : this.state.isOpened.id === "login-4"
+                        ? ""
+                        : "mobile-navigation-content-hide"
+                    }`}
+                  >
+                    <div className={`navbar-discover-content`}>
+                      <Link to="#">Placements</Link>
+                      <Link to="#">Achievements</Link>
+                      <Link to="#">Know Us</Link>
+                      <Link to="#">Student Grievance</Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-login-container-element">
+                  <div className="navbar-login-heading">
+                    <div onClick={() => this.expandNavbar("login", 5)}>
+                      Students Login
+                    </div>
+                    <div
+                      className="justifyCenter-btn"
+                      onClick={() => this.expandNavbar("login", 5)}
+                    >
+                      <div
+                        className={`mobile-nav-expand-btn ${
+                          !this.state.isOpened.value
+                            ? ""
+                            : this.state.isOpened.id === "login-5"
+                            ? "mobile-nav-expand-btn-tap"
+                            : ""
+                        }`}
+                      >
+                        <div className="mobile-nav-expand-btn-inner"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={`${
+                      !this.state.isOpened.value
+                        ? "mobile-navigation-content-hide"
+                        : this.state.isOpened.id === "login-5"
+                        ? ""
+                        : "mobile-navigation-content-hide"
+                    }`}
+                  >
+                    <div className={`navbar-discover-content`}>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">Lorem ipsum</Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="navbar-login-container-element">
+                  <div className="navbar-login-heading">
+                    <div onClick={() => this.expandNavbar("login", 6)}>
+                      Why GTBIT?
+                    </div>
+                    <div
+                      className="justifyCenter-btn"
+                      onClick={() => this.expandNavbar("login", 6)}
+                    >
+                      <div
+                        className={`mobile-nav-expand-btn ${
+                          !this.state.isOpened.value
+                            ? ""
+                            : this.state.isOpened.id === "login-6"
+                            ? "mobile-nav-expand-btn-tap"
+                            : ""
+                        }`}
+                      >
+                        <div className="mobile-nav-expand-btn-inner"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={`${
+                      !this.state.isOpened.value
+                        ? "mobile-navigation-content-hide"
+                        : this.state.isOpened.id === "login-6"
+                        ? ""
+                        : "mobile-navigation-content-hide"
+                    }`}
+                  >
+                    <div className={`navbar-discover-content`}>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">Lorem ipsum</Link>
+                      <Link to="#">Lorem ipsum</Link>
                     </div>
                   </div>
                 </div>
