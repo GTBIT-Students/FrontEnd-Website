@@ -3,6 +3,7 @@ import "./assets/css/navbar.css";
 import "./assets/css/logo-text-animation.css";
 import { Link } from "react-router-dom";
 import GTBITLOGO from "../../assets/images/gtbitlogo-old.png";
+import downArrow from "./assets/images/down-arrow.svg";
 import NavBarComponent from "./NavbarComponent";
 
 class NavigationBar extends Component {
@@ -29,6 +30,10 @@ class NavigationBar extends Component {
     } else {
       this.setState({ isMobileNavOpened: true });
     }
+  };
+  childComponentNavbarToggler = () => {
+    console.log("toggled");
+    this.toggleNavigationBar("");
   };
   getNavbarPostition = () => {
     const navbar = document.getElementById("navbar-container");
@@ -58,6 +63,15 @@ class NavigationBar extends Component {
           },
         });
       }
+    } else if (component === "") {
+      document.body.style.overflowY = "hidden";
+      this.setState({
+        NavbarProperty: {
+          isOpened: false,
+          top: "",
+          component: "",
+        },
+      });
     } else {
       document.body.style.overflowY = "hidden";
       this.setState({
@@ -109,7 +123,7 @@ class NavigationBar extends Component {
         >
           <div className="container-big">
             <div className="navbar-grid">
-              <Link to="#">
+              <Link to="/">
                 <div className="navbar-gtbit-logo-text-container">
                   <div className="navbar-logo-container">
                     <img
@@ -193,29 +207,62 @@ class NavigationBar extends Component {
                   <div>
                     <Link
                       to="#"
+                      className={
+                        !(this.state.NavbarProperty.component === "discover")
+                          ? ""
+                          : this.state.NavbarProperty.isOpened
+                          ? "navbar-right-links-active-onclick"
+                          : ""
+                      }
                       onClick={() => this.toggleNavigationBar("discover")}
                     >
                       DISCOVER{" "}
-                      <span style={{ color: "var(--secondaryColor)" }}>
-                        &#11167;
+                      <span>
+                        <img
+                          className="navbar-img-arrow"
+                          src={downArrow}
+                          alt="Arrow"
+                        />
                       </span>
                     </Link>
                     <Link
                       to="#"
+                      className={
+                        !(this.state.NavbarProperty.component === "about")
+                          ? ""
+                          : this.state.NavbarProperty.isOpened
+                          ? "navbar-right-links-active-onclick"
+                          : ""
+                      }
                       onClick={() => this.toggleNavigationBar("about")}
                     >
                       ABOUT{" "}
-                      <span style={{ color: "var(--secondaryColor)" }}>
-                        &#11167;
+                      <span>
+                        <img
+                          className="navbar-img-arrow"
+                          src={downArrow}
+                          alt="Arrow"
+                        />
                       </span>
                     </Link>
                     <Link
                       to="#"
+                      className={
+                        !(this.state.NavbarProperty.component === "login")
+                          ? ""
+                          : this.state.NavbarProperty.isOpened
+                          ? "navbar-right-links-active-onclick"
+                          : ""
+                      }
                       onClick={() => this.toggleNavigationBar("login")}
                     >
                       LOGIN{" "}
-                      <span style={{ color: "var(--secondaryColor)" }}>
-                        &#11167;
+                      <span>
+                        <img
+                          className="navbar-img-arrow"
+                          src={downArrow}
+                          alt="Arrow"
+                        />
                       </span>
                     </Link>
                   </div>
@@ -225,7 +272,10 @@ class NavigationBar extends Component {
           </div>
         </div>
         {this.state.NavbarProperty.isOpened ? (
-          <NavBarComponent onCall={this.state.NavbarProperty} />
+          <NavBarComponent
+            onToggleNavBar={this.childComponentNavbarToggler}
+            onCall={this.state.NavbarProperty}
+          />
         ) : (
           ""
         )}
