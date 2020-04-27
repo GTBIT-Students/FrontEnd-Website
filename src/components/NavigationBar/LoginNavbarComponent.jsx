@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./assets/css/navbar-component.css";
 
 class LoginNavbarComponent extends Component {
   state = {
@@ -31,7 +30,6 @@ class LoginNavbarComponent extends Component {
   render() {
     return (
       <>
-        <div className="navbar-dropdown-overlay"></div>
         <div
           className="navbar-dropdown-container"
           style={this.style.dropDownPosition}
@@ -41,7 +39,9 @@ class LoginNavbarComponent extends Component {
               <div className="navbar-dropdown-login-grid">
                 <div className="navbar-login-container-element">
                   <div className="navbar-login-heading">
-                    <div>Admin Login</div>
+                    <div onClick={() => this.expandNavbar("login", 1)}>
+                      Admin Login
+                    </div>
                     <div
                       className="justifyCenter-btn"
                       onClick={() => this.expandNavbar("login", 1)}
@@ -85,7 +85,9 @@ class LoginNavbarComponent extends Component {
                 </div>
                 <div className="navbar-login-container-element">
                   <div className="navbar-login-heading">
-                    <div>Teachers Login</div>
+                    <div onClick={() => this.expandNavbar("login", 2)}>
+                      Teachers Login
+                    </div>
                     <div
                       className="justifyCenter-btn"
                       onClick={() => this.expandNavbar("login", 2)}
@@ -129,7 +131,9 @@ class LoginNavbarComponent extends Component {
                 </div>
                 <div className="navbar-login-container-element">
                   <div className="navbar-login-heading">
-                    <div>Students Login</div>
+                    <div onClick={() => this.expandNavbar("login", 3)}>
+                      Students Login
+                    </div>
                     <div
                       className="justifyCenter-btn"
                       onClick={() => this.expandNavbar("login", 3)}
