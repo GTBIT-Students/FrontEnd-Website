@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { API_Domain } from "../../pages/baseDomain";
+import { API_Domain } from "../../baseDomain";
 import "./assets/css/uppernoticebar.css";
 import axios from "axios";
 
