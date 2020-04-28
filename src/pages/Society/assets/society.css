@@ -6,13 +6,26 @@
     overflow: hidden;
   }
   
-  .ant-carousel .slick-slide h3 {
-    color: #fff;
+  .ant-carousel .slick-slide img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 
 
 .Sheading{
-    color:red;
+    border-radius: 0px 30px;
+  padding: 10px 30px;
+  background-color:var(--primaryColor);
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.Sheading h1{
+color:white;
+}
+
+.Sheading p{
+color:#646b71;
 }
 
 .societydesc{
