@@ -1,7 +1,3 @@
-.Sheading{
-    color:red;
-}
-
 .ant-carousel .slick-slide {
     text-align: center;
     height: 160px;
@@ -13,3 +9,23 @@
   .ant-carousel .slick-slide h3 {
     color: #fff;
   }
+
+
+.Sheading{
+    color:red;
+}
+
+.societydesc{
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.aboutBgImg{
+  position: absolute;
+  opacity: .2;
+  z-index: -1;
+  margin: auto auto;
+  left:0;
+  right:0;
+}

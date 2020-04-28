@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Carousel } from "antd";
 import "./assets/society.css";
 import SocietyEvents from "./SocietyEvents";
+import iipcImg from "./assets/image/iipc.png";
 
 export class AboutSociety extends Component {
   render() {
@@ -73,7 +74,10 @@ export class AboutSociety extends Component {
           </div>
         </div>
 
-        <div className="societydesc">
+        <div className="societydesc" 
+        //style={{backgroundImage:`url(${grpImage})`}}
+        >
+        <img src={iipcImg} className="aboutBgImg"/>
           <div className="text-secondary">About IIPC</div>
           <div>
             Industry Institute Partnership Cell(IIPC) enhances the interface
