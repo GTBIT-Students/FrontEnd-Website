@@ -31,7 +31,7 @@ export class AboutSociety extends Component {
 
           <div className="col-12 col-sm-6">
             <div className="row ">
-              <div className="col text-sm-right">
+              <div className="col text-sm-right mr-2">
                 <span className="S_span">Active:</span>
                 <span>Yes</span>
               </div>
@@ -51,7 +51,7 @@ export class AboutSociety extends Component {
 
           <div className="col col-12 col-sm-6">
             <div className="row">
-              <div className="col text-sm-right">
+              <div className="col text-sm-right mr-2">
                 <span className="S_span">Head:</span>
                 <span>Maninder Singh</span>
               </div>
@@ -61,7 +61,7 @@ export class AboutSociety extends Component {
 
         <div className="row justify-content-center mt-4">
           <div className="col-10 col-sm-8">
-            <Carousel>
+            <Carousel autoplay>
               <div>
                 <img src={grpImage} />
               </div>
