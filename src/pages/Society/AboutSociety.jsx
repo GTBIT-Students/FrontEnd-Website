@@ -87,14 +87,14 @@ export class AboutSociety extends Component {
             >
               About IIPC
             </Divider>
-          <div>
-            <Paragraph ellipsis={{ rows: 15, expandable: true }}>
+          <div style={{fontSize:'17px'}}>
+            <Paragraph ellipsis={{ rows: 12, expandable: true }}>
             Industry Institute Partnership Cell(IIPC) enhances the interface
             between industry and institute.Purpose of IIPC is to identifies the
             trends and expectations of industry and prepare students for meeting
             the latest requirements by giving Workshops, Seminars, Expert Talks
             and other Training programmes by experts.
-          {[1,2,3,4,5].map(item=>(
+          {[1,2,3,4,5,6,7].map(item=>(
            <div className="my-1" key={item}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
               vitae ipsa facilis assumenda inventore minus deleniti possimus
