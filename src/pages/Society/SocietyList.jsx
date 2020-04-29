@@ -5,9 +5,9 @@ const list=["D'Lang Chaps THE LITERARY SOCIETY","Divine Circle","E.T.C, Cult Soc
 export class SocietyList extends Component {
     render() {
         return (
-            <div >
+            <div className="S_listBox">
                {list.map(item=>(
-                   <div className="my-2 border p-1">{item}</div>
+                   <div className="my-2 border p-1 S_list">{item}</div>
                ))}
             </div>
         )

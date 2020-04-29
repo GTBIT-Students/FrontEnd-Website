@@ -7,10 +7,10 @@ export class Society extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-3 col-0 border">
+          <div className="col-3 d-none d-md-block">
             <SocietyList />
           </div>
-          <div className="col-12 col-sm-9 border">
+          <div className="col-12 col-md-9 p-0 ">
               <AboutSociety/>
           </div>
         </div>

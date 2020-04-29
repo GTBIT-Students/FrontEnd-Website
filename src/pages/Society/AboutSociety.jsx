@@ -5,6 +5,10 @@ import SocietyEvents from "./SocietyEvents";
 import iipcImg from "./assets/image/iipc.png";
 import grpImage from "./assets/image/group.jpeg";
 import { Divider } from "antd";
+import { Typography } from 'antd';
+
+const { Paragraph } = Typography;
+
 export class AboutSociety extends Component {
   render() {
     return (
@@ -16,48 +20,48 @@ export class AboutSociety extends Component {
         </div>
 
         <div className="row mt-4">
-          <div className="col">
-            <div className="row justify-content-end">
+          <div className="col-12 col-sm-6">
+            <div className="row ">
               <div className="col">
-                <span>Formed on:</span>
+                <span className="S_span">Formed on:</span>
                 <span>12-12-2010</span>
               </div>
             </div>
           </div>
 
-          <div className="col">
-            <div className="row justify-content-end">
-              <div className="col-auto">
-                <span>Active:</span>
+          <div className="col-12 col-sm-6">
+            <div className="row ">
+              <div className="col text-sm-right">
+                <span className="S_span">Active:</span>
                 <span>Yes</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="row my-2">
-          <div className="col">
-            <div className="row justify-content-end">
+        <div className="row">
+          <div className="col col-12 col-sm-6">
+            <div className="row ">
               <div className="col">
-                <span>Incharge:</span>
+                <span className="S_span">Incharge:</span>
                 <span>Mr Mukesh Sahu</span>
               </div>
             </div>
           </div>
 
-          <div className="col">
-            <div className="row justify-content-end">
-              <div className="col-auto">
-                <span>Head:</span>
+          <div className="col col-12 col-sm-6">
+            <div className="row">
+              <div className="col text-sm-right">
+                <span className="S_span">Head:</span>
                 <span>Maninder Singh</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="row justify-content-center mt-5">
+        <div className="row justify-content-center mt-4">
           <div className="col-10 col-sm-8">
-            <Carousel autoplay>
+            <Carousel>
               <div>
                 <img src={grpImage} />
               </div>
@@ -83,26 +87,22 @@ export class AboutSociety extends Component {
             >
               About IIPC
             </Divider>
-        
           <div>
+            <Paragraph ellipsis={{ rows: 15, expandable: true }}>
             Industry Institute Partnership Cell(IIPC) enhances the interface
             between industry and institute.Purpose of IIPC is to identifies the
             trends and expectations of industry and prepare students for meeting
             the latest requirements by giving Workshops, Seminars, Expert Talks
             and other Training programmes by experts.
-            <div className="my-1">
+          {[1,2,3,4,5].map(item=>(
+           <div className="my-1" key={item}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
               vitae ipsa facilis assumenda inventore minus deleniti possimus
               deserunt recusandae saepe. Numquam odit, adipisci ipsum aspernatur
               in reprehenderit ad porro. Maxime!
             </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            fugit cum illo laboriosam reiciendis, sint doloremque iure beatae
-            tempora maiores asperiores itaque totam accusamus numquam tempore
-            excepturi quasi eveniet doloribus. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quasi, in? Nihil quasi, amet fugit
-            omnis quas ullam reprehenderit voluptatum in quaerat! Nesciunt ut
-            laborum illum dolorem et dolor vel dicta.
+          ))} 
+          </Paragraph>
           </div>
         </div>
         <SocietyEvents />
