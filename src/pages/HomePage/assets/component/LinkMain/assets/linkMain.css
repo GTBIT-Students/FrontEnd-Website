@@ -1,0 +1,8 @@
+.link-slick-link {
+  margin: 0.25em 0;
+  padding: 0.5em;
+  transition: 0.5s;
+}
+.link-slick-link:hover {
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1);
+}

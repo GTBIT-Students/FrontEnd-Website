@@ -1,0 +1,14 @@
+.alumni-event-container,
+.notice-link-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+}
+@media screen and (min-width: 992px) {
+  .alumni-event-container {
+    grid-template-columns: 1fr auto;
+  }
+  .notice-link-container {
+    grid-template-columns: auto 1fr;
+  }
+}
