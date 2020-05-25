@@ -6,6 +6,9 @@ import "./assets/css/navbar-component.css";
 
 class NavbarComponent extends Component {
   state = {};
+  closeNav = () => {
+    this.props.closeNav();
+  };
   render() {
     return (
       <>
@@ -15,17 +18,26 @@ class NavbarComponent extends Component {
         ></div>
 
         {this.props.onCall.component === "discover" ? (
-          <DiscoverNavbarComponent onCall={this.props.onCall} />
+          <DiscoverNavbarComponent
+            closeNav={this.closeNav}
+            onCall={this.props.onCall}
+          />
         ) : (
           ""
         )}
         {this.props.onCall.component === "about" ? (
-          <AboutNavbarComponent onCall={this.props.onCall} />
+          <AboutNavbarComponent
+            closeNav={this.closeNav}
+            onCall={this.props.onCall}
+          />
         ) : (
           ""
         )}
         {this.props.onCall.component === "login" ? (
-          <LoginNavbarComponent onCall={this.props.onCall} />
+          <LoginNavbarComponent
+            closeNav={this.closeNav}
+            onCall={this.props.onCall}
+          />
         ) : (
           ""
         )}

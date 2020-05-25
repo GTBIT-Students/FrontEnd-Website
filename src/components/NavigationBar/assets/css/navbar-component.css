@@ -102,6 +102,9 @@
   font-weight: 300;
   margin: 0.5em 0;
 }
+.navbar-discover-content a:hover {
+  color: var(--secondaryColor);
+}
 .nav-bar-login-btn-container {
   margin: 1em 0;
 }

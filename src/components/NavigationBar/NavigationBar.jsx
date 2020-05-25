@@ -32,18 +32,29 @@ class NavigationBar extends Component {
     }
   };
   childComponentNavbarToggler = () => {
-    console.log("toggled");
+    this.toggleNavigationBar("");
+  };
+  closeNavBarProps = () => {
+    window.scrollTo(0, 0);
     this.toggleNavigationBar("");
   };
   getNavbarPostition = () => {
     const navbar = document.getElementById("navbar-container");
     let topPosition = navbar.offsetTop + navbar.clientHeight;
     topPosition += "px";
-    // console.log(topPosition);
     return topPosition;
   };
   toggleNavigationBar = (component) => {
-    if (component === this.state.NavbarProperty.component) {
+    if (component === "") {
+      document.body.style.overflowY = "scroll";
+      this.setState({
+        NavbarProperty: {
+          isOpened: false,
+          top: "",
+          component: "",
+        },
+      });
+    } else if (component === this.state.NavbarProperty.component) {
       if (this.state.NavbarProperty.isOpened) {
         this.setState({
           NavbarProperty: {
@@ -63,15 +74,6 @@ class NavigationBar extends Component {
           },
         });
       }
-    } else if (component === "") {
-      document.body.style.overflowY = "hidden";
-      this.setState({
-        NavbarProperty: {
-          isOpened: false,
-          top: "",
-          component: "",
-        },
-      });
     } else {
       document.body.style.overflowY = "hidden";
       this.setState({
@@ -123,7 +125,7 @@ class NavigationBar extends Component {
         >
           <div className="container-big">
             <div className="navbar-grid">
-              <Link to="/">
+              <Link to="/" onClick={this.closeNavBarProps}>
                 <div className="navbar-gtbit-logo-text-container">
                   <div className="navbar-logo-container">
                     <img
@@ -275,6 +277,7 @@ class NavigationBar extends Component {
           <NavBarComponent
             onToggleNavBar={this.childComponentNavbarToggler}
             onCall={this.state.NavbarProperty}
+            closeNav={this.closeNavBarProps}
           />
         ) : (
           ""

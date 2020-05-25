@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import NavBarColumns from "./navigationBarColumns";
 
 class AboutNavbarComponent extends Component {
   state = {
@@ -37,205 +38,59 @@ class AboutNavbarComponent extends Component {
           <div className="container-big">
             {this.props.onCall.component === "about" ? (
               <div className="navbar-dropdown-discover-grid">
-                <div className="navbar-login-container-element">
-                  <div className="navbar-login-heading">
-                    <div onClick={() => this.expandNavbar("login", 1)}>
-                      UG Programmes
+                {/* Start */}
+                {NavBarColumns.about.map((elmt, index) => (
+                  <div
+                    className="navbar-login-container-element"
+                    key={`outerDiscover-${index}`}
+                  >
+                    <div className="navbar-login-heading">
+                      <div
+                        onClick={() => this.expandNavbar("login", index + 1)}
+                      >
+                        {elmt.name}
+                      </div>
+                      <div
+                        className="justifyCenter-btn"
+                        onClick={() => this.expandNavbar("login", index + 1)}
+                      >
+                        <div
+                          className={`mobile-nav-expand-btn ${
+                            !this.state.isOpened.value
+                              ? ""
+                              : this.state.isOpened.id === `login-${index + 1}`
+                              ? "mobile-nav-expand-btn-tap"
+                              : ""
+                          }`}
+                        >
+                          <div className="mobile-nav-expand-btn-inner"></div>
+                        </div>
+                      </div>
                     </div>
                     <div
-                      className="justifyCenter-btn"
-                      onClick={() => this.expandNavbar("login", 1)}
+                      className={`${
+                        !this.state.isOpened.value
+                          ? "mobile-navigation-content-hide"
+                          : this.state.isOpened.id === `login-${index + 1}`
+                          ? ""
+                          : "mobile-navigation-content-hide"
+                      }`}
                     >
-                      <div
-                        className={`mobile-nav-expand-btn ${
-                          !this.state.isOpened.value
-                            ? ""
-                            : this.state.isOpened.id === "login-1"
-                            ? "mobile-nav-expand-btn-tap"
-                            : ""
-                        }`}
-                      >
-                        <div className="mobile-nav-expand-btn-inner"></div>
+                      <div className="navbar-discover-content">
+                        {elmt.columns.map((innerElmt, index) => (
+                          <Link
+                            key={`innerDiscover-${index}`}
+                            onClick={this.props.closeNav}
+                            to={innerElmt.link}
+                          >
+                            {innerElmt.name}
+                          </Link>
+                        ))}
                       </div>
                     </div>
                   </div>
-                  <div
-                    className={`${
-                      !this.state.isOpened.value
-                        ? "mobile-navigation-content-hide"
-                        : this.state.isOpened.id === "login-1"
-                        ? ""
-                        : "mobile-navigation-content-hide"
-                    }`}
-                  >
-                    <div className={`navbar-discover-content`}>
-                      <Link to="#">Computer Science Engineering (CSE)</Link>
-                      <Link to="#">Information Technology (IT)</Link>
-                      <Link to="#">
-                        Electronics and Communication Engineering (ECE)
-                      </Link>
-                      <Link to="#">
-                        Electrical and Electronic Engineering (EEE)
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="navbar-login-container-element">
-                  <div className="navbar-login-heading">
-                    <div onClick={() => this.expandNavbar("login", 2)}>
-                      Academics
-                    </div>
-                    <div
-                      className="justifyCenter-btn"
-                      onClick={() => this.expandNavbar("login", 2)}
-                    >
-                      <div
-                        className={`mobile-nav-expand-btn ${
-                          !this.state.isOpened.value
-                            ? ""
-                            : this.state.isOpened.id === "login-2"
-                            ? "mobile-nav-expand-btn-tap"
-                            : ""
-                        }`}
-                      >
-                        <div className="mobile-nav-expand-btn-inner"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={`${
-                      !this.state.isOpened.value
-                        ? "mobile-navigation-content-hide"
-                        : this.state.isOpened.id === "login-2"
-                        ? ""
-                        : "mobile-navigation-content-hide"
-                    }`}
-                  >
-                    <div className={`navbar-discover-content`}>
-                      <Link to="#">Lorem ipsum</Link>
-                      <Link to="#">Lorem ipsum</Link>
-                      <Link to="#">Lorem ipsum</Link>
-                      <Link to="#">Lorem ipsum</Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="navbar-login-container-element">
-                  <div className="navbar-login-heading">
-                    <div onClick={() => this.expandNavbar("login", 3)}>
-                      Societies
-                    </div>
-                    <div
-                      className="justifyCenter-btn"
-                      onClick={() => this.expandNavbar("login", 3)}
-                    >
-                      <div
-                        className={`mobile-nav-expand-btn ${
-                          !this.state.isOpened.value
-                            ? ""
-                            : this.state.isOpened.id === "login-3"
-                            ? "mobile-nav-expand-btn-tap"
-                            : ""
-                        }`}
-                      >
-                        <div className="mobile-nav-expand-btn-inner"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={`${
-                      !this.state.isOpened.value
-                        ? "mobile-navigation-content-hide"
-                        : this.state.isOpened.id === "login-3"
-                        ? ""
-                        : "mobile-navigation-content-hide"
-                    }`}
-                  >
-                    <div className={`navbar-discover-content`}>
-                      <Link to="#">Technical Societies</Link>
-                      <Link to="#">Cultural Societies</Link>
-                      <Link to="#">Religious Societies</Link>
-                      <Link to="#">Drama Societies</Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="navbar-login-container-element">
-                  <div className="navbar-login-heading">
-                    <div onClick={() => this.expandNavbar("login", 4)}>
-                      Quick Links
-                    </div>
-                    <div
-                      className="justifyCenter-btn"
-                      onClick={() => this.expandNavbar("login", 4)}
-                    >
-                      <div
-                        className={`mobile-nav-expand-btn ${
-                          !this.state.isOpened.value
-                            ? ""
-                            : this.state.isOpened.id === "login-4"
-                            ? "mobile-nav-expand-btn-tap"
-                            : ""
-                        }`}
-                      >
-                        <div className="mobile-nav-expand-btn-inner"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={`${
-                      !this.state.isOpened.value
-                        ? "mobile-navigation-content-hide"
-                        : this.state.isOpened.id === "login-4"
-                        ? ""
-                        : "mobile-navigation-content-hide"
-                    }`}
-                  >
-                    <div className={`navbar-discover-content`}>
-                      <Link to="#">Admissions</Link>
-                      <Link to="#">Students</Link>
-                      <Link to="#">Photo Gallery</Link>
-                      <Link to="#">Contact Us</Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="navbar-login-container-element">
-                  <div className="navbar-login-heading">
-                    <div onClick={() => this.expandNavbar("login", 5)}>
-                      Other Information
-                    </div>
-                    <div
-                      className="justifyCenter-btn"
-                      onClick={() => this.expandNavbar("login", 5)}
-                    >
-                      <div
-                        className={`mobile-nav-expand-btn ${
-                          !this.state.isOpened.value
-                            ? ""
-                            : this.state.isOpened.id === "login-5"
-                            ? "mobile-nav-expand-btn-tap"
-                            : ""
-                        }`}
-                      >
-                        <div className="mobile-nav-expand-btn-inner"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={`${
-                      !this.state.isOpened.value
-                        ? "mobile-navigation-content-hide"
-                        : this.state.isOpened.id === "login-5"
-                        ? ""
-                        : "mobile-navigation-content-hide"
-                    }`}
-                  >
-                    <div className={`navbar-discover-content`}>
-                      <Link to="#">Online Fee Payment</Link>
-                      <Link to="#">Download Brochure</Link>
-                    </div>
-                  </div>
-                </div>
+                ))}
+                {/* End */}
               </div>
             ) : (
               ""
