@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Loader from "../../components/Loader/loader";
 import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import SideNavObj from "../../SideNavBar";
