@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./assets/css/directorDesk.css";
+import closeNavBarProps from "../../../../../closeNavBarProps";
 
 class DirectorDesk extends Component {
   state = {};
@@ -28,8 +29,8 @@ class DirectorDesk extends Component {
 
             <div className="director-read-more-container"></div>
             <div className="director-read-more">
-              <Link to="">
-                Read More{" "}
+              <Link to="/director-message" onClick={closeNavBarProps}>
+                Read More
                 <span style={{ color: "var(--secondaryColor)" }}>&gt;</span>
               </Link>
             </div>

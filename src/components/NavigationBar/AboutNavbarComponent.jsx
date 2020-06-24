@@ -76,17 +76,20 @@ class AboutNavbarComponent extends Component {
                           : "mobile-navigation-content-hide"
                       }`}
                     >
-                      <div className="navbar-discover-content">
-                        {elmt.columns.map((innerElmt, index) => (
+                      {elmt.columns.map((innerElmt, index) => (
+                        <div
+                          className="navbar-discover-content"
+                          key={`innerDiscover-${index}`}
+                        >
                           <Link
-                            key={`innerDiscover-${index}`}
+                            className="navbar-discover-content-link"
                             onClick={this.props.closeNav}
                             to={innerElmt.link}
                           >
                             {innerElmt.name}
                           </Link>
-                        ))}
-                      </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 ))}

@@ -5,7 +5,6 @@ import "../css/singlesocietyCarousel.css";
 class Carousels extends Component {
   state = {};
   render() {
-    // console.log(this.props.imageArr);
     return (
       <>
         <Carousel pause="hover" interval="5000" touch={true} slide={true}>

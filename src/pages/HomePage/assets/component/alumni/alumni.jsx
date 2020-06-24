@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import AlumniImg from "./assets/alumni.png";
+import closeNavBarProps from "../../../../../closeNavBarProps";
 import "./assets/alumni.css";
 
 class AlumniSection extends Component {
@@ -18,11 +19,7 @@ class AlumniSection extends Component {
     return (
       <div className="alumni-container-grid">
         <div className="alumni-container">
-          <h2 className="director-heading">Alumni Stories</h2>
-          <h5>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
-            impedit animi. Impedit fugit quia blanditiis veniam ad accusantium
-          </h5>
+          <h2 className="director-heading">Our Alumnus</h2>
         </div>
         <div>
           <Carousel {...this.carouselSettings}>
@@ -72,7 +69,7 @@ class AlumniSection extends Component {
             {/* End */}
           </Carousel>
           <div className="alumni-btn-container">
-            <Link to="#" className="alumni-button">
+            <Link to="#" className="alumni-button" onClick={closeNavBarProps}>
               Alumni List
             </Link>
           </div>

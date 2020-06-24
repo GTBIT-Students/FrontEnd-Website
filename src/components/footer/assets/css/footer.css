@@ -111,9 +111,13 @@ input::-webkit-inner-spin-button {
   border-radius: 3px;
   border: 0.2em solid rgba(0, 0, 0, 0);
   color: var(--black);
+  cursor: pointer;
 }
 .footer-ask-query-btn:hover {
   filter: brightness(0.9);
+}
+.footer-ask-query-btn:active {
+  filter: brightness(0.8);
 }
 .footer-ask-query-btn:focus {
   outline: none;

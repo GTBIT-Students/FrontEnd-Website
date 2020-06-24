@@ -1,0 +1,48 @@
+.all-departments-head {
+  display: block;
+  font-size: 2em;
+  padding: 0.5em;
+  text-align: center;
+  color: #fff;
+}
+a.all-department-link {
+  text-decoration: none;
+}
+.department-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin: 2em 0;
+}
+.department-inner-container {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+}
+.department-inner-content {
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 0 0 2px rgba(0, 0, 0.9);
+  width: 100%;
+  background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.4) 20%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@media screen and (max-width: 600px) {
+  .all-departments-head {
+    font-size: 1em;
+  }
+}

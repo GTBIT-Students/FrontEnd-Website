@@ -43,7 +43,6 @@ class SingleSociety extends Component {
         Authorization: `Token ${API_Domain.API_Token}`,
       },
     }).then((data) => {
-      // console.log(data.data.society[0]);
       if (data.data.society.length !== 1) {
         window.location.href = "/error-404";
       } else {

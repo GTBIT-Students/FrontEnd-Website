@@ -21,6 +21,7 @@
 }
 .single-department-content {
   font-size: 1.2em;
+  text-align: justify;
 }
 .single-department-image-inner-container {
   display: grid;
@@ -45,5 +46,10 @@
 @media screen and (max-width: 500px) {
   .single-department-image-1 {
     height: 230px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .single-department-content > ul {
+    padding: 0 0.5em;
   }
 }

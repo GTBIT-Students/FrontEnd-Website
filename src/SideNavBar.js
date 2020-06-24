@@ -20,6 +20,48 @@ const SideNavObj = {
       },
     ],
   },
+  KnowMore: {
+    heading: "Know More",
+    elements: [
+      {
+        name: "Mission and Aim",
+        link: "/mission-and-aim",
+      },
+      {
+        name: "Vision and Core Values",
+        link: "/vision-and-core-values",
+      },
+      {
+        name: "Privacy Policy",
+        link: "/privacy-policy",
+      },
+      {
+        name: "Code of Conduct",
+        link: "/code-of-conduct",
+      },
+    ],
+  },
+  QuickLinks: {
+    heading: "Quick Links",
+    elements: [
+      {
+        name: "Admissions",
+        link: "/admissions",
+      },
+      {
+        name: "Photo Gallery",
+        link: "/gallery",
+      },
+      {
+        name: "Contact Us",
+        link: "/contact-us",
+      },
+      {
+        name: "Know Us",
+        link: "/know-us",
+      },
+    ],
+  },
   SideEventNotice: {
     heading: "Discover More",
     elements: [
@@ -32,8 +74,58 @@ const SideNavObj = {
         link: "/event",
       },
       {
+        name: "Important Links",
+        link: "/important-links",
+      },
+      {
         name: "Achievements",
         link: "/achievement",
+      },
+    ],
+  },
+  ImportantLinks: {
+    heading: "Important Links",
+    elements: [
+      {
+        name: "Placements",
+        link: "/placements",
+      },
+      {
+        name: "Achievements",
+        link: "/achievements",
+      },
+      {
+        name: "Know Us",
+        link: "/know-us",
+      },
+      {
+        name: "Student Grievance",
+        link: "/student-grievance",
+      },
+    ],
+  },
+  CampusLife: {
+    heading: "Campus Life",
+    elements: [
+      {
+        name: "Infrastructure",
+        link: "/infrastructure",
+      },
+      {
+        name: "Administration",
+        link: "/administration",
+      },
+      {
+        name: "Campus Provisions",
+        link: "/campus-provision",
+      },
+      {
+        name: "360 View of campus",
+        link: "/gtbit-360",
+      },
+      {
+        name: "GATES - Annual Fest of GTBIT",
+        link: "/gates",
       },
     ],
   },
@@ -55,6 +147,73 @@ const SideNavObj = {
       {
         name: "Electrical and Electronics",
         link: "/department/electrical-and-electronics",
+      },
+    ],
+  },
+  Programmes: {
+    heading: "Explore Programmes",
+    elements: [
+      {
+        name: "Computer Science",
+        link: "/programs/computer-science",
+      },
+      {
+        name: "Information Technology",
+        link: "/programs/information-technology",
+      },
+      {
+        name: "Electronics and Communication",
+        link: "/programs/electronics-and-communication",
+      },
+      {
+        name: "Electrical and Electronics",
+        link: "/programs/electrical-and-electronics",
+      },
+    ],
+  },
+  Facilities: {
+    heading: "Other Facilites",
+    elements: [
+      {
+        name: "Medical Counsellor",
+        link: "/facilities/medical-counsellor",
+      },
+      {
+        name: "Lab Rooms",
+        link: "/facilities/lab",
+      },
+      {
+        name: "Library and Book Bank",
+        link: "/facilities/library-and-book-bank",
+      },
+      {
+        name: "Computing Facility",
+        link: "/facilities/computing-facility",
+      },
+      {
+        name: "The IIPC",
+        link: "/facilities/iipc",
+      },
+    ],
+  },
+  Academics: {
+    heading: "Academics",
+    elements: [
+      {
+        name: "Examination Schedule",
+        link: "/examination/schedule",
+      },
+      {
+        name: "Exam Results",
+        link: "/examination/result",
+      },
+      {
+        name: "Academic Calendar",
+        link: "/examination/calendar",
+      },
+      {
+        name: "Affiliated University",
+        link: "/affiliated-university",
       },
     ],
   },

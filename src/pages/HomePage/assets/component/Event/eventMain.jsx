@@ -4,6 +4,7 @@ import DateConverter from "../../../../../month";
 import Loader from "../../../../../components/Loader/loader";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import closeNavBarProps from "../../../../../closeNavBarProps";
 
 class EventMain extends Component {
   state = {};
@@ -54,7 +55,7 @@ class EventMain extends Component {
           )}
           {/* End */}
           <div className="alumni-btn-container">
-            <Link to="#" className="alumni-button">
+            <Link to="#" className="alumni-button" onClick={closeNavBarProps}>
               All Events
             </Link>
           </div>

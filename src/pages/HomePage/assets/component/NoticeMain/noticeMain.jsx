@@ -3,37 +3,61 @@ import "./assets/noticeMain.css";
 import { Link } from "react-router-dom";
 import DateConverter from "../../../../../month";
 import Loader from "../../../../../components/Loader/loader";
+import Slider from "react-slick";
+import closeNavBarProps from "../../../../../closeNavBarProps";
 
 class NoticeMain extends Component {
   state = {};
+
+  SliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    arrows: false,
+    autoplay: true,
+    touchMove: true,
+    autoplaySpeed: 5000,
+    slidesToScroll: 3,
+    vertical: true,
+  };
+
   render() {
     return (
-      <div className="notice-main-container">
-        <div className="notice-main-legend">Notices</div>
+      <fieldset className="notice-main-container">
+        <legend className="notice-main-legend">Notice Board</legend>
         <div className="notice-main-inner-container">
-          {/* <div className="notice-main-inner-heading">
-            <div className="notice-main-notice-text">Notice &nbsp;</div>
-            <div>Updated On</div>
-          </div> */}
           <div>
             {this.props.noticeList.length === 0 ? (
               <Loader />
             ) : (
               <>
-                {this.props.noticeList.map((elmt) => (
-                  <div className="notice-main-content">
-                    <Link tp="#">{elmt.notice}</Link>
-                    <div>{DateConverter(elmt.created_date)}</div>
-                  </div>
-                ))}
+                <Slider {...this.SliderSettings}>
+                  {this.props.noticeList.map((elmt, index) => (
+                    <div key={`notice-main-${index}`}>
+                      <div className="notice-main-content">
+                        <Link to={`/notice/${elmt.slug}`}>{elmt.notice}</Link>
+                        <div>{DateConverter(elmt.created_date)}</div>
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
               </>
             )}
           </div>
           <div>
-            <Link to="#">View All</Link>
+            <div className="alumni-btn-container notice-btn-container">
+              <Link
+                to="/notice"
+                className="alumni-button"
+                onClick={closeNavBarProps}
+              >
+                View All
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </fieldset>
     );
   }
 }

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader from "../../components/Loader/loader";
 import API_Domain from "../../baseDomain";
+import closeNavBarProps from "../../closeNavBarProps";
+
 import "./assets/css/allSociety.css";
 
 class AllSociety extends Component {
@@ -29,7 +31,6 @@ class AllSociety extends Component {
         religious: [],
         miscellaneous: [],
       };
-      // console.log(data.data.society_list);
       data.data.society_list.map((elmt) => {
         if (elmt.category === "technical") {
           society.technical.push(elmt);
@@ -74,6 +75,7 @@ class AllSociety extends Component {
                           <Link
                             to={`/society/${elmt.slug}`}
                             className="all-society-society-name"
+                            onClick={closeNavBarProps}
                           >
                             {elmt.name}
                           </Link>
@@ -88,7 +90,12 @@ class AllSociety extends Component {
                           </div>
                         </div>
                         <div className="all-society-know-more">
-                          <Link to={`/society/${elmt.slug}`}>Know More</Link>
+                          <Link
+                            to={`/society/${elmt.slug}`}
+                            onClick={closeNavBarProps}
+                          >
+                            Know More
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -124,6 +131,7 @@ class AllSociety extends Component {
                           <Link
                             to={`/society/${elmt.slug}`}
                             className="all-society-society-name"
+                            onClick={closeNavBarProps}
                           >
                             {elmt.name}
                           </Link>
@@ -132,7 +140,12 @@ class AllSociety extends Component {
                           </div>
                         </div>
                         <div className="all-society-know-more">
-                          <Link to={`/society/${elmt.slug}`}>Know More</Link>
+                          <Link
+                            to={`/society/${elmt.slug}`}
+                            onClick={closeNavBarProps}
+                          >
+                            Know More
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -168,6 +181,7 @@ class AllSociety extends Component {
                           <Link
                             to={`/society/${elmt.slug}`}
                             className="all-society-society-name"
+                            onClick={closeNavBarProps}
                           >
                             {elmt.name}
                           </Link>
@@ -176,7 +190,12 @@ class AllSociety extends Component {
                           </div>
                         </div>
                         <div className="all-society-know-more">
-                          <Link to={`/society/${elmt.slug}`}>Know More</Link>
+                          <Link
+                            to={`/society/${elmt.slug}`}
+                            onClick={closeNavBarProps}
+                          >
+                            Know More
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -214,6 +233,7 @@ class AllSociety extends Component {
                           <Link
                             to={`/society/${elmt.slug}`}
                             className="all-society-society-name"
+                            onClick={closeNavBarProps}
                           >
                             {elmt.name}
                           </Link>
@@ -222,7 +242,12 @@ class AllSociety extends Component {
                           </div>
                         </div>
                         <div className="all-society-know-more">
-                          <Link to={`/society/${elmt.slug}`}>Know More</Link>
+                          <Link
+                            to={`/society/${elmt.slug}`}
+                            onClick={closeNavBarProps}
+                          >
+                            Know More
+                          </Link>
                         </div>
                       </div>
                     </div>

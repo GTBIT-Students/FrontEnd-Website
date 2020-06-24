@@ -1,35 +1,12 @@
 import React, { Component } from "react";
-import API_Domain from "../../baseDomain";
 import "./assets/css/uppernoticebar.css";
-import axios from "axios";
 
 class UpperNoticeBar extends Component {
   state = {
-    notice: "",
     componentVisibility: true,
-  };
-  componentDidMount = () => {
-    axios({
-      url: `${API_Domain.route}/upper-notice`,
-      method: "GET",
-      headers: {
-        Authorization: `Token ${API_Domain.API_Token}`,
-      },
-    }).then((data) => {
-      if (
-        data.data.current_notice[0].notice === "" ||
-        data.data.current_notice[0].notice === null
-      ) {
-        return null;
-      } else {
-        // console.log(data.data.current_notice[0].notice);
-        this.setState({ notice: data.data.current_notice[0].notice });
-      }
-    });
   };
 
   render() {
-    // if (this.state.componentVisibility) {
     return (
       <>
         {this.state.componentVisibility ? (
@@ -44,7 +21,7 @@ class UpperNoticeBar extends Component {
                           Announcements
                         </div>
                         <div className="upper-notice-announcements-notice">
-                          {this.state.notice === "" ? (
+                          {this.props.notice === "" ? (
                             <>
                               <div style={{ display: "flex" }}>
                                 {" "}
@@ -56,7 +33,7 @@ class UpperNoticeBar extends Component {
                             </>
                           ) : (
                             <div className="upper-notice-announcements-notice-inner">
-                              {this.state.notice}
+                              {this.props.notice}
                             </div>
                           )}
                         </div>

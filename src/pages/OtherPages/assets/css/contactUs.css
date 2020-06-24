@@ -1,0 +1,14 @@
+.contact-us-gtbit-location {
+  height: 450px;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .contact-us-gtbit-location {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact-us-gtbit-location {
+    height: 220px;
+  }
+}

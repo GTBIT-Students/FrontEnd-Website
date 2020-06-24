@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./assets/css/footer.css";
 import GTBIT_LOGO from "../../assets/images/gtbitlogo-old.png";
 // import GTBIT_LOGO from "../TitleBar/assets/images/GTBIT-LOGO.png";
+import closeNavBarProps from "../../closeNavBarProps";
 import { Link } from "react-router-dom";
 
 class Footer extends Component {
@@ -85,35 +86,31 @@ class Footer extends Component {
                 </div>
                 <div className="footer-ask-here-container">
                   <div>
-                    {" "}
                     <input
                       className="footer-ask-query-input"
                       placeholder="Name"
                       type="text"
-                    />{" "}
+                    />
                   </div>
                   <div>
-                    {" "}
                     <input
                       className="footer-ask-query-input"
                       placeholder="Email Address"
                       type="email"
-                    />{" "}
+                    />
                   </div>
                   <div>
-                    {" "}
                     <input
                       className="footer-ask-query-input"
                       placeholder="Phone Number"
                       type="number"
-                    />{" "}
+                    />
                   </div>
                   <div>
-                    {" "}
                     <textarea
                       className="footer-ask-query-input"
                       placeholder="Any Query"
-                    ></textarea>{" "}
+                    ></textarea>
                   </div>
                   <div
                     style={{
@@ -122,26 +119,32 @@ class Footer extends Component {
                       justifyContent: "flex-end",
                     }}
                   >
-                    {" "}
                     <button className="footer-ask-query-btn">
-                      {" "}
-                      Ask the query{" "}
-                    </button>{" "}
+                      Ask the query
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div className="footer-privacy-grid">
               <div>
-                <Link className="footer-links" to="#">
+                <Link
+                  className="footer-links"
+                  to="/privacy-policy"
+                  onClick={closeNavBarProps}
+                >
                   Privacy Policy
                 </Link>
-                <Link className="footer-links" to="#">
+                <Link
+                  className="footer-links"
+                  to="/code-of-conduct"
+                  onClick={closeNavBarProps}
+                >
                   Code of Conduct
                 </Link>
               </div>
               <div className="footer-webteam">
-                Developed by{" "}
+                Developed by
                 <Link
                   className="footer-index-links"
                   to="#"
