@@ -69,7 +69,11 @@ class AlumniSection extends Component {
             {/* End */}
           </Carousel>
           <div className="alumni-btn-container">
-            <Link to="#" className="alumni-button" onClick={closeNavBarProps}>
+            <Link
+              to="/alumni"
+              className="alumni-button"
+              onClick={closeNavBarProps}
+            >
               Alumni List
             </Link>
           </div>

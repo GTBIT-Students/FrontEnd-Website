@@ -55,7 +55,11 @@ class EventMain extends Component {
           )}
           {/* End */}
           <div className="alumni-btn-container">
-            <Link to="#" className="alumni-button" onClick={closeNavBarProps}>
+            <Link
+              to="/event"
+              className="alumni-button"
+              onClick={closeNavBarProps}
+            >
               All Events
             </Link>
           </div>

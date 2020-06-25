@@ -9,9 +9,8 @@ class AllDepartments extends Component {
   render() {
     return (
       <>
-        <div className="table-head-container all-departments-head">
-          List Of Departments
-        </div>
+        <h2 className="director-heading-center">List Of Departments</h2>
+
         <div className="department-content-grid">
           <Link
             className="all-department-link"

@@ -71,6 +71,9 @@ import Gallery from "./pages/Gallery/gallery";
 import Result from "./pages/Examination/result";
 import Schedule from "./pages/Examination/schedule";
 import Calendar from "./pages/Examination/Calendar";
+import AlumniList from "./pages/Alumni/almuniList";
+import SingleEvent from "./pages/Event/SingleEvent";
+import AllEvent from "./pages/Event/AllEvent";
 // Other Pages
 
 class Routes extends Component {
@@ -171,6 +174,28 @@ class Routes extends Component {
             </div>
           </Route>
           {/* Notices */}
+
+          {/* Events */}
+          <Route path="/event">
+            <div className="container-big">
+              <div className="single-society-container-grid">
+                <div>
+                  <Route exact path="/event">
+                    <AllEvent innerEvent={this.state.event} />
+                  </Route>
+                  <Route
+                    exact
+                    path="/event/:eventSlug"
+                    component={SingleEvent}
+                  />
+                </div>
+                <div>
+                  <SideNavPane content={SideNavObj.SideEventNotice} />
+                </div>
+              </div>
+            </div>
+          </Route>
+          {/* Events */}
 
           {/* Deparments */}
           <Route path="/department">
@@ -279,6 +304,7 @@ class Routes extends Component {
           {/* Society */}
 
           {/* Other Pages */}
+          <Route exact path="/alumni" component={AlumniList} />
           <Route exact path="/privacy-policy" component={PrivacyPolicy} />
           <Route exact path="/code-of-conduct" component={CodeOfConduct} />
           <Route exact path="/infrastructure" component={Infrastructure} />

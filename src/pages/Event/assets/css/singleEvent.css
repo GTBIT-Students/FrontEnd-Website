@@ -1,0 +1,27 @@
+.event-prior-details-container {
+  margin: 1em 0 !important;
+  gap: 0.5em;
+}
+.single-event-image {
+  height: 200px;
+  width: 100%;
+  background-color: #ddd;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  border: 0.4em solid var(--primaryColor);
+  margin: 1em 0;
+}
+@media screen and (min-width: 992px) {
+  .single-event-image {
+    width: 535px;
+    margin: 0 1em 1em 0;
+  }
+}
+@media screen and (min-width: 500px) {
+  .single-event-image {
+    height: 300px;
+  }
+}

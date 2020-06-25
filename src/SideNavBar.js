@@ -79,7 +79,11 @@ const SideNavObj = {
       },
       {
         name: "Achievements",
-        link: "/achievement",
+        link: "/achievements",
+      },
+      {
+        name: "Alumni",
+        link: "/alumni",
       },
     ],
   },

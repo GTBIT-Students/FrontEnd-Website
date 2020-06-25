@@ -7,7 +7,7 @@ import Loader from "../../components/Loader/loader";
 import "../Society/assets/css/SingleSociety.css";
 import "./assets/css/singleNotice.css";
 
-class SingleSociety extends Component {
+class SingleNotice extends Component {
   state = {
     isLoaded: false,
     notice: {},
@@ -40,13 +40,16 @@ class SingleSociety extends Component {
     }
     return (
       <>
-        <div className="table-head-container single-notice-heading">
+        <h2 className="director-heading">{this.state.notice.notice}</h2>
+
+        {/* <div className="table-head-container single-notice-heading">
           <div>{this.state.notice.notice}</div>
-        </div>
+        </div> */}
         <div className="society-prior-details notice-prior-detail">
-          Updated on: <b>{DateConverter(this.state.notice.created_date)}</b>
+          <p>
+            Updated on: <b>{DateConverter(this.state.notice.created_date)}</b>
+          </p>
         </div>
-        <div className="singleSociety-main-header">Description</div>
         <div className="singleSociety-main-content single-notice-main-content">
           {ReactHtmlParser(this.state.notice.description)}
         </div>
@@ -55,4 +58,4 @@ class SingleSociety extends Component {
   }
 }
 
-export default SingleSociety;
+export default SingleNotice;

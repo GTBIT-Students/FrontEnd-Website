@@ -5,15 +5,13 @@ import Loader from "../../components/Loader/loader";
 import "../Society/assets/css/allSociety.css";
 import "./assets/css/allNotice.css";
 
-class AllSociety extends Component {
+class AllNotice extends Component {
   state = {};
 
   render() {
     return (
       <>
-        <div className="single-society-heading singleSociety-main-header notices-heading">
-          Latest Notices
-        </div>
+        <div className="director-heading notices-heading">Latest Notices</div>
 
         <div className="all-notice-table-container">
           <div className="table-head-container">
@@ -47,4 +45,4 @@ class AllSociety extends Component {
   }
 }
 
-export default AllSociety;
+export default AllNotice;

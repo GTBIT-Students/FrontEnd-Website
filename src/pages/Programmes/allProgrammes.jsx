@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./assets/css/allDepartment.css";
 import BackImg from "./assets/images/img1.jpeg";
 import { Link } from "react-router-dom";
 import closeNavBarProps from "../../closeNavBarProps";
@@ -9,9 +8,8 @@ class allProgrammes extends Component {
   render() {
     return (
       <>
-        <div className="table-head-container all-departments-head">
-          List Of Programmes
-        </div>
+        <h2 className="director-heading-center">List Of Programmes</h2>
+
         <div className="department-content-grid">
           <Link
             className="all-department-link"

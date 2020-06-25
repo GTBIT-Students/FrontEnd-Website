@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./assets/css/singleDepartment.css";
 import { Link } from "react-router-dom";
 import closeNavBarProps from "../../closeNavBarProps";
 

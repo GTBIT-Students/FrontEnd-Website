@@ -15,7 +15,7 @@ class AllSociety extends Component {
         <div className="container-big">
           <div className="single-society-container-grid">
             <div>
-              <div className="single-society-heading singleSociety-main-header notices-heading">
+              <div className="director-heading notices-heading">
                 Important Links
               </div>
 
@@ -30,7 +30,12 @@ class AllSociety extends Component {
                     {this.props.innerLinks.map((elmt, index) => (
                       <div className="table-content" key={`link-${index}`}>
                         <div>{index + 1}.&nbsp;&nbsp;&nbsp;</div>
-                        <a className="notice-text" href={elmt.link}>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="notice-text"
+                          href={elmt.link}
+                        >
                           {elmt.link_text}
                         </a>
                       </div>

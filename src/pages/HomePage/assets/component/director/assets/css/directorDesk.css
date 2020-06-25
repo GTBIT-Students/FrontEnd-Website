@@ -35,6 +35,19 @@
   background-color: var(--primaryColor);
   display: block;
 }
+.director-heading-center {
+  font-weight: bold;
+  text-align: center;
+}
+.director-heading-center::before {
+  margin-bottom: 0.5em;
+  content: "";
+  height: 4px;
+  width: 48px;
+  background-color: var(--primaryColor);
+  display: block;
+  margin: 0 auto;
+}
 .director-content {
   font-size: 1.2em;
 }
