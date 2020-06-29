@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import SideNavObj from "../../SideNavBar";
+import Img1 from "./assets/images/img1.jpg";
+import Img2 from "./assets/images/img2.jpg";
+import Img3 from "./assets/images/img3.jpg";
 
 class KnowUs extends Component {
   state = {};
@@ -12,10 +15,19 @@ class KnowUs extends Component {
             <div>
               <h2 className="director-heading">Know About Us</h2>
               <div className="facility-page-image-container">
-                <div className="facility-page-image-1"></div>
+                <div
+                  className="facility-page-image-1"
+                  style={{ backgroundImage: `url(${Img1})` }}
+                ></div>
                 <div className="facility-page-image-2-container">
-                  <div className="facility-page-image-2"></div>
-                  <div className="facility-page-image-2"></div>
+                  <div
+                    className="facility-page-image-2"
+                    style={{ backgroundImage: `url(${Img2})` }}
+                  ></div>
+                  <div
+                    className="facility-page-image-2"
+                    style={{ backgroundImage: `url(${Img3})` }}
+                  ></div>
                 </div>
               </div>
               <div className="director-page-main-content">

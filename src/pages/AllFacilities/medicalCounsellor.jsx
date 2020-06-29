@@ -17,17 +17,16 @@ class MedicalCounsellor extends Component {
         <div className="director-page-main-content">
           <p></p>
           <p className="director-page-main-content-designation">
-            <div>Dr. Priya Babbar</div>
-            <div>Medical Counsellor</div>
-            <div>
-              Mobile: <a href="tel:919911205854">+91-9911205854</a>
-            </div>
-            <div>
-              Email:{" "}
-              <a href="mailto:priyabhatnagarbabbar@gmail.com">
-                priyabhatnagarbabbar@gmail.com
-              </a>
-            </div>
+            Dr. Priya Babbar
+            <br />
+            Medical Counsellor
+            <br />
+            Mobile: <a href="tel:919911205854">+91-9911205854</a>
+            <br />
+            Email:{" "}
+            <a href="mailto:priyabhatnagarbabbar@gmail.com">
+              priyabhatnagarbabbar@gmail.com
+            </a>
           </p>
         </div>
       </>

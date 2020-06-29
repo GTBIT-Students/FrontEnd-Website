@@ -81,7 +81,6 @@ class LabFacility extends Component {
               emulator for 8085 and 8031 based PODS.
             </li>
           </ul>
-          <p className="director-page-main-content-designation"></p>
         </div>
       </>
     );

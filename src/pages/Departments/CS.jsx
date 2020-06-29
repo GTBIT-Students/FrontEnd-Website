@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import "./assets/css/singleDepartment.css";
 import { Link } from "react-router-dom";
+import CS1 from "./assets/images/img1.jpg";
+import CS2 from "./assets/images/img2.jpg";
+import CS3 from "./assets/images/img3.jpg";
 import closeNavBarProps from "../../closeNavBarProps";
+import "./assets/css/singleDepartment.css";
 
 class CSDepartment extends Component {
   state = {};
@@ -20,7 +23,10 @@ class CSDepartment extends Component {
           </p>
         </h4>
         <div className="single-department-content-container-1">
-          <div className="single-department-image-1"></div>
+          <div
+            className="single-department-image-1"
+            style={{ backgroundImage: `url(${CS1})` }}
+          ></div>
           <div className="single-department-content justifyCenter">
             Engineering Department involves basic sciences and engineering
             subjects at the 1st year level.In the 2nd and 3rd year the core
@@ -40,8 +46,14 @@ class CSDepartment extends Component {
             Management and Security and Embedded Systems are offered.
           </div>
           <div className="single-department-image-inner-container">
-            <div className="single-department-image-2"></div>
-            <div className="single-department-image-2"></div>
+            <div
+              className="single-department-image-2"
+              style={{ backgroundImage: `url(${CS2})` }}
+            ></div>
+            <div
+              className="single-department-image-2"
+              style={{ backgroundImage: `url(${CS3})` }}
+            ></div>
           </div>
         </div>
         <div className="single-department-content">

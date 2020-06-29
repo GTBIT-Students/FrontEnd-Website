@@ -1,56 +1,35 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
+// import Banner1 from "./assets/images/banner-1.jpg";
+import { carousel } from "./CarouselContent";
 import "./assets/css/carousel.css";
 
 class Carousels extends Component {
   state = {};
+
+  settings = {
+    pause: "hover",
+    interval: 5000,
+    touch: true,
+    slide: true,
+  };
+
   render() {
     return (
       <>
-        {/* <div className="CarouselUpperSpacing" /> */}
-        <Carousel pause="hover" interval="5000" touch={true} slide={true}>
-          <Carousel.Item>
-            <div
-              className="carouselInnerContent"
-              style={{
-                backgroundImage: `url(
-                  "https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/08/143944974601-materialdesign_introduction.png"
+        <Carousel {...this.settings}>
+          {carousel.map((data, index) => (
+            <Carousel.Item key={`carousel-${index}`}>
+              <div
+                className="carouselInnerContent"
+                style={{
+                  backgroundImage: `url(
+                  ${data.image}
                 )`,
-              }}
-            ></div>
-            <Carousel.Caption>
-              <h3>First slide heading</h3>
-              <p>Content</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div
-              className="carouselInnerContent"
-              style={{
-                backgroundImage: `url(
-                  "https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/08/143944974601-materialdesign_introduction.png"
-                )`,
-              }}
-            ></div>
-            <Carousel.Caption>
-              <h3>Second slide heading</h3>
-              <p>Content</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div
-              className="carouselInnerContent"
-              style={{
-                backgroundImage: `url(
-                  "https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/08/143944974601-materialdesign_introduction.png"
-                )`,
-              }}
-            ></div>
-            <Carousel.Caption>
-              <h3>Third slide heading</h3>
-              <p>Content</p>
-            </Carousel.Caption>
-          </Carousel.Item>
+                }}
+              ></div>
+            </Carousel.Item>
+          ))}
         </Carousel>
       </>
     );

@@ -144,7 +144,7 @@ class Footer extends Component {
                 </Link>
               </div>
               <div className="footer-webteam">
-                Developed by
+                Developed by{" "}
                 <Link
                   className="footer-index-links"
                   to="#"

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import closeNavBarProps from "../../closeNavBarProps";
+import IT1 from "./assets/images/img3.jpg";
+import IT2 from "./assets/images/img2.jpg";
+import IT3 from "./assets/images/img4.jpg";
 
 class ITProgram extends Component {
   state = {};
@@ -17,7 +20,10 @@ class ITProgram extends Component {
           </p>
         </h4>
         <div className="single-department-content-container-1">
-          <div className="single-department-image-1"></div>
+          <div
+            className="single-department-image-1"
+            style={{ backgroundImage: `url(${IT1})` }}
+          ></div>
           <div className="single-department-content justifyCenter">
             The emphasis of the information technology curriculum is on subjects
             like Theory of Automata, Computer Graphics ,Operating Systems, Data
@@ -44,8 +50,14 @@ class ITProgram extends Component {
             </p>
           </div>
           <div className="single-department-image-inner-container">
-            <div className="single-department-image-2"></div>
-            <div className="single-department-image-2"></div>
+            <div
+              className="single-department-image-2"
+              style={{ backgroundImage: `url(${IT2})` }}
+            ></div>
+            <div
+              className="single-department-image-2"
+              style={{ backgroundImage: `url(${IT3})` }}
+            ></div>
           </div>
         </div>
         <div className="single-department-content">

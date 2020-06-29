@@ -112,7 +112,7 @@ class Routes extends Component {
           {/* Director Desk */}
 
           {/* GTBIT 360 */}
-          <Route exact path="/gtbit-360" component={GTBIT360} />
+          <Route exact path="/virtual-tour" component={GTBIT360} />
           {/* GTBIT 360 */}
 
           {/* Important Links */}

@@ -6,7 +6,7 @@ const NavBarColumns = {
         { name: "Infrastructure", link: "/infrastructure" },
         { name: "Administration", link: "/administration" },
         { name: "Campus Provisions", link: "/campus-provision" },
-        { name: "360 View of campus", link: "/gtbit-360" },
+        { name: "Virtual Tour", link: "/virtual-tour" },
         { name: "GATES - Annual Fest of GTBIT", link: "/gates" },
       ],
     },

@@ -2,7 +2,7 @@
   padding: 2.5em 0;
 }
 .carouselInnerContent {
-  height: 500px;
+  height: calc(100vh - 138px);
   width: 100%;
   background-size: cover;
   background-position: center;

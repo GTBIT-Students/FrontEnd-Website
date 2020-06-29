@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import closeNavBarProps from "../../closeNavBarProps";
+import EEE1 from "./assets/images/img5.jpg";
+import EEE2 from "./assets/images/img6.jpg";
+import EEE3 from "./assets/images/img7.jpg";
 
 class EEEDepartment extends Component {
   state = {};
@@ -18,7 +21,10 @@ class EEEDepartment extends Component {
           </p>
         </h4>
         <div className="single-department-content-container-1">
-          <div className="single-department-image-1"></div>
+          <div
+            className="single-department-image-1"
+            style={{ backgroundImage: `url(${EEE1})` }}
+          ></div>
           <div className="single-department-content justifyCenter">
             <p>
               The department caters to the ever challenging need of technical
@@ -54,10 +60,16 @@ class EEEDepartment extends Component {
           </div>
           <div className="single-department-image-inner-container">
             <div className="justifyCenter">
-              <div className="single-department-image-2"></div>
+              <div
+                className="single-department-image-2"
+                style={{ backgroundImage: `url(${EEE2})` }}
+              ></div>
             </div>
             <div className="justifyCenter">
-              <div className="single-department-image-2"></div>
+              <div
+                className="single-department-image-2"
+                style={{ backgroundImage: `url(${EEE3})` }}
+              ></div>
             </div>
           </div>
         </div>

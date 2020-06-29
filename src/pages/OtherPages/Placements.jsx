@@ -78,22 +78,26 @@ class Placements extends Component {
                 <br />
                 <p>For any placement related queries, contact:</p>
                 <p className="director-page-main-content-designation">
-                  <div>Head, CDMC</div>
-                  <div>Guru Tegh Bahadur Institute of Technology</div>
-                  <div>G-8 Area, Rajouri Garden</div>
-                  <div>New Delhi</div>
-                  <div>
-                    Email:{" "}
-                    <a href="mailto:gtbit.ipu.delhi@gmail.com">
-                      gtbit.ipu.delhi@gmail.com
-                    </a>
-                  </div>
-                  <div>
-                    For student verification, please mail on:{" "}
-                    <a href="mailto:verifystudentgtbit@gmail.com">
-                      verifystudentgtbit@gmail.com
-                    </a>
-                  </div>
+                  Head, CDMC
+                  <br />
+                  Guru Tegh Bahadur Institute of Technology
+                  <br />
+                  G-8 Area, Rajouri Garden
+                  <br />
+                  New Delhi
+                  <br />
+                  <br />
+                  Email <br />
+                  <a href="mailto:gtbit.ipu.delhi@gmail.com">
+                    gtbit.ipu.delhi@gmail.com
+                  </a>
+                  <br />
+                  <br />
+                  For student verification, please mail on
+                  <br />
+                  <a href="mailto:verifystudentgtbit@gmail.com">
+                    verifystudentgtbit@gmail.com
+                  </a>
                 </p>
               </div>
             </div>

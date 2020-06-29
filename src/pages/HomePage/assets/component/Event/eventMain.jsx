@@ -33,7 +33,11 @@ class EventMain extends Component {
               <Slider {...this.SliderSettings}>
                 {this.props.eventList.map((elmt, index) => (
                   <div key={`event-slick-con${index}`}>
-                    <Link to={`/event/${elmt.slug}`} className="eventMain-link">
+                    <Link
+                      to={`/event/${elmt.slug}`}
+                      onClick={closeNavBarProps}
+                      className="eventMain-link"
+                    >
                       <div className="event-slick-con">
                         <div
                           className="event-main-image"

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import closeNavBarProps from "../../closeNavBarProps";
+import ECE1 from "./assets/images/img8.jpg";
+import ECE2 from "./assets/images/img5.jpg";
+import ECE3 from "./assets/images/img7.jpg";
 
 class ECEDepartment extends Component {
   state = {};
@@ -18,7 +21,10 @@ class ECEDepartment extends Component {
           </p>
         </h4>
         <div className="single-department-content-container-1">
-          <div className="single-department-image-1"></div>
+          <div
+            className="single-department-image-1"
+            style={{ backgroundImage: `url(${ECE1})` }}
+          ></div>
           <div className="single-department-content justifyCenter">
             A wide curriculum ranging from basic Analog and Digital Electronics
             to EMT Theory, Communication Systems to Telecommunication Networks,
@@ -45,8 +51,14 @@ class ECEDepartment extends Component {
             </p>
           </div>
           <div className="single-department-image-inner-container">
-            <div className="single-department-image-2"></div>
-            <div className="single-department-image-2"></div>
+            <div
+              className="single-department-image-2"
+              style={{ backgroundImage: `url(${ECE2})` }}
+            ></div>
+            <div
+              className="single-department-image-2"
+              style={{ backgroundImage: `url(${ECE3})` }}
+            ></div>
           </div>
         </div>
         <div className="single-department-content">

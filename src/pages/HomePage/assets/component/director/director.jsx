@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./assets/css/directorDesk.css";
 import downArrow from "./assets/images/down-arrow.svg";
+import DirectorImage from "./assets/images/director.jpg";
 import closeNavBarProps from "../../../../../closeNavBarProps";
 
 class DirectorDesk extends Component {
@@ -11,10 +12,19 @@ class DirectorDesk extends Component {
       <>
         <div className="director-grid">
           <div className="director-left-content">
-            <div className="director-left-img-1"></div>
+            <div
+              className="director-left-img-1"
+              style={{ backgroundImage: `url(${DirectorImage})` }}
+            ></div>
             <div className="director-left-content-inner">
-              <div className="director-left-img-2"></div>
-              <div className="director-left-img-2"></div>
+              <div
+                className="director-left-img-2"
+                style={{ backgroundImage: `url(${DirectorImage})` }}
+              ></div>
+              <div
+                className="director-left-img-2"
+                style={{ backgroundImage: `url(${DirectorImage})` }}
+              ></div>
             </div>
           </div>
           <div className="director-right-content">

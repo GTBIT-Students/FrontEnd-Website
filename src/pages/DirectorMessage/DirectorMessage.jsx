@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import SideNavObj from "../../SideNavBar";
-
+import DirectorImage from "./assets/images/director.jpg";
 import "./assets/css/directorMessage.css";
 
 class DirectorMessage extends Component {
@@ -14,7 +14,10 @@ class DirectorMessage extends Component {
             <div>
               <h2 className="director-heading">Message from Director</h2>
               <div className="director-page-image-container">
-                <div className="director-page-img-1"></div>
+                <div
+                  className="director-page-img-1"
+                  style={{ backgroundImage: `url(${DirectorImage})` }}
+                ></div>
                 <div className="director-quote justifyCenter">
                   <p>
                     Enthusiasm is excitement with inspiration, motivation, and a
@@ -40,8 +43,10 @@ class DirectorMessage extends Component {
                   raise their excellence to the next level.
                 </p>
                 <p className="director-page-main-content-designation">
-                  <div>Dr. Rominder Kaur</div>
-                  <div>Director - GTBIT</div>
+                  Dr. Rominder Kaur
+                  <br />
+                  Director - GTBIT
+                  <br />
                 </p>
               </div>
             </div>
