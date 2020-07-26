@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import NavBarColumns from "./navigationBarColumns";
 import HtmlParser from "react-html-parser";
 
@@ -69,7 +68,7 @@ class LoginNavbarComponent extends Component {
                       </div>
                     </div>
                     <div
-                      className={`${
+                      className={`navbar-login-grid ${
                         !this.state.isOpened.value
                           ? "mobile-navigation-content-hide"
                           : this.state.isOpened.id === `login-${index + 1}`
@@ -82,9 +81,9 @@ class LoginNavbarComponent extends Component {
                         <br />
                       </div>
                       <div className="nav-bar-login-btn-container">
-                        <Link to={elmt.link} className="nav-bar-login-btn">
+                        <a href={elmt.link} className="nav-bar-login-btn">
                           {elmt.btnText}
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </div>

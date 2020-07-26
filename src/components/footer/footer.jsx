@@ -38,24 +38,54 @@ class Footer extends Component {
                   <div className="footer-links-headers">Admissions</div>
                   <ul style={{ margin: "0 0.5em" }}>
                     <li>
-                      <Link to="#" className="footer-index-links">
+                      <a
+                        href="https://cdn.digialm.com//EForms/configuredHtml/1258/64709/Instruction.html"
+                        target="_blank"
+                        className="footer-index-links"
+                        rel="noopener noreferrer"
+                      >
+                        Online Admission Form
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.ipu.ac.in/Pubinfo2020/Admission2020main/admbr2020main270220.pdf"
+                        target="_blank"
+                        className="footer-index-links"
+                        rel="noopener noreferrer"
+                      >
+                        Admission Brochure
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.ipu.ac.in/Pubinfo2019/Admission2019mian/adm2019main.htm"
+                        target="_blank"
+                        className="footer-index-links"
+                        rel="noopener noreferrer"
+                      >
                         2020-2021
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="#" className="footer-index-links">
-                        Guru Gobind Singh Indraprastha University, New Delhi
-                      </Link>
+                      <a
+                        href="http://www.ipu.ac.in/Pubinfo2019/Admission2019mian/adm2019main.htm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-index-links"
+                      >
+                        2019-2020
+                      </a>
                     </li>
                     <li>
-                      <Link to="#" className="footer-index-links">
-                        2018-2019
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#" className="footer-index-links">
-                        2017-2018
-                      </Link>
+                      <a
+                        href="http://www.ipu.ac.in"
+                        target="_blank"
+                        className="footer-index-links"
+                        rel="noopener noreferrer"
+                      >
+                        Affiliated University
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -63,19 +93,30 @@ class Footer extends Component {
                   <div className="footer-links-headers">Other Links</div>
                   <ul style={{ margin: "0 0.5em" }}>
                     <li>
-                      <Link to="#" className="footer-index-links">
-                        Portals for student
-                      </Link>
+                      <a
+                        href="https://student.gtbit.org"
+                        className="footer-index-links"
+                      >
+                        Portal for students
+                      </a>
                     </li>
                     <li>
-                      <Link to="#" className="footer-index-links">
+                      <a
+                        href="https://teacher.gtbit.org"
+                        className="footer-index-links"
+                      >
                         Portal for teachers
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="#" className="footer-index-links">
+                      <a
+                        href="https://www.worldometers.info/coronavirus/?utm_campaign=homeAdvegas1?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-index-links"
+                      >
                         Covid-19 Latest News
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

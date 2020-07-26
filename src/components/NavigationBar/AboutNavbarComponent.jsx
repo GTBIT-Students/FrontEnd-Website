@@ -81,13 +81,22 @@ class AboutNavbarComponent extends Component {
                           className="navbar-discover-content"
                           key={`innerDiscover-${index}`}
                         >
-                          <Link
-                            className="navbar-discover-content-link"
-                            onClick={this.props.closeNav}
-                            to={innerElmt.link}
-                          >
-                            {innerElmt.name}
-                          </Link>
+                          {!innerElmt.anchor ? (
+                            <Link
+                              className="navbar-discover-content-link"
+                              onClick={this.props.closeNav}
+                              to={innerElmt.link}
+                            >
+                              {innerElmt.name}
+                            </Link>
+                          ) : (
+                            <a
+                              className="navbar-discover-content-link"
+                              href={innerElmt.link}
+                            >
+                              {innerElmt.name}
+                            </a>
+                          )}
                         </div>
                       ))}
                     </div>

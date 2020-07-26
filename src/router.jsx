@@ -53,7 +53,6 @@ import Gates from "./pages/GATES/gates";
 // Other Pages
 import PrivacyPolicy from "./pages/OtherPages/PrivacyPolicy";
 import CodeOfConduct from "./pages/OtherPages/CodeOfConduct";
-import Infrastructure from "./pages/OtherPages/Infrastructure";
 import AffiliatedUniversity from "./pages/OtherPages/AffiliatedUniversity";
 import Administration from "./pages/OtherPages/Administration";
 import CampusProvision from "./pages/OtherPages/CampusProvision";
@@ -307,7 +306,6 @@ class Routes extends Component {
           <Route exact path="/alumni" component={AlumniList} />
           <Route exact path="/privacy-policy" component={PrivacyPolicy} />
           <Route exact path="/code-of-conduct" component={CodeOfConduct} />
-          <Route exact path="/infrastructure" component={Infrastructure} />
           <Route exact path="/administration" component={Administration} />
           <Route
             exact

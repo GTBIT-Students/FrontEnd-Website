@@ -46,6 +46,17 @@ class Gates extends Component {
                   their talents. In 2007, sports events were also incorporated
                   in GATES and were a huge success.
                 </p>
+
+                <p className="director-page-main-content-designation">
+                  Gates 2019:{" "}
+                  <a
+                    href="https://gates-2k19.firebaseapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    gates2k19.in
+                  </a>
+                </p>
               </div>
             </div>
             <div>

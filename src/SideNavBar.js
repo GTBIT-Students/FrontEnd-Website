@@ -112,10 +112,6 @@ const SideNavObj = {
     heading: "Campus Life",
     elements: [
       {
-        name: "Infrastructure",
-        link: "/infrastructure",
-      },
-      {
         name: "Administration",
         link: "/administration",
       },
@@ -125,7 +121,7 @@ const SideNavObj = {
       },
       {
         name: "360 View of campus",
-        link: "/gtbit-360",
+        link: "/virtual-tour",
       },
       {
         name: "GATES - Annual Fest of GTBIT",

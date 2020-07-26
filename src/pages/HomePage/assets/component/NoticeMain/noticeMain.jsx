@@ -36,7 +36,12 @@ class NoticeMain extends Component {
                   {this.props.noticeList.map((elmt, index) => (
                     <div key={`notice-main-${index}`}>
                       <div className="notice-main-content">
-                        <Link to={`/notice/${elmt.slug}`}>{elmt.notice}</Link>
+                        <Link
+                          to={`/notice/${elmt.slug}`}
+                          onClick={closeNavBarProps}
+                        >
+                          {elmt.notice}
+                        </Link>
                         <div>{DateConverter(elmt.created_date)}</div>
                       </div>
                     </div>

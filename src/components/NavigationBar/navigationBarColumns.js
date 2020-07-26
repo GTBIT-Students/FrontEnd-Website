@@ -3,7 +3,6 @@ const NavBarColumns = {
     {
       name: "Campus Life",
       columns: [
-        { name: "Infrastructure", link: "/infrastructure" },
         { name: "Administration", link: "/administration" },
         { name: "Campus Provisions", link: "/campus-provision" },
         { name: "Virtual Tour", link: "/virtual-tour" },
@@ -62,9 +61,17 @@ const NavBarColumns = {
     {
       name: "Login Panels",
       columns: [
-        { name: "Admin Login", link: "https://admin.gtbit.org" },
-        { name: "Teachers Login", link: "https://teacher.gtbit.org" },
-        { name: "Students Login", link: "https://student.gtbit.org" },
+        { name: "Admin Login", link: "https://admin.gtbit.org", anchor: true },
+        {
+          name: "Teachers Login",
+          link: "https://teacher.gtbit.org",
+          anchor: true,
+        },
+        {
+          name: "Students Login",
+          link: "https://student.gtbit.org",
+          anchor: true,
+        },
       ],
     },
     {
@@ -119,10 +126,37 @@ const NavBarColumns = {
     {
       name: "Quick Links",
       columns: [
+        {
+          name: "Online Skill Test by MHRD",
+          link: "https://www.youth4work.com/onlinetalenttest",
+          anchor: true,
+        },
+        {
+          name: "Unnat Bharat",
+          link: "http://unnatbharatabhiyan.gov.in:8080/new-website/",
+          anchor: true,
+        },
+        { name: "MOOCS Swayam", link: "https://swayam.gov.in/", anchor: true },
+        {
+          name: "AICTE Faculty Feedback",
+          link: "https://www.aicte-india.org/feedback/faculty.php",
+          anchor: true,
+        },
+        {
+          name: "AICTE Student Feedback",
+          link: "https://www.aicte-india.org/feedback/students.php",
+          anchor: true,
+        },
+      ],
+    },
+    {
+      name: "Other Links",
+      columns: [
         { name: "Admissions", link: "/admissions" },
         {
           name: "Mandatory Disclosure",
-          link: "http://gtbit.org/assets/mandatory_disclosure.pdf",
+          link: "https://gtbit.org/assets/mandatory_disclosure.pdf",
+          anchor: true,
         },
         { name: "Photo Gallery", link: "/gallery" },
         { name: "Contact Us", link: "/contact-us" },
@@ -134,7 +168,8 @@ const NavBarColumns = {
         { name: "Online Fee Payment", link: "/online-fee-payment" },
         {
           name: "Download Brochure",
-          link: "http://gtbit.org/assets/brochure.pdf",
+          link: "https://gtbit.org/assets/brochure.pdf",
+          anchor: true,
         },
         { name: "Affiliated University", link: "/affiliated-university" },
         // { name: "Newsletters", link: "/newsletter" },
@@ -145,21 +180,21 @@ const NavBarColumns = {
     {
       name: "Admin Login",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate facilis voluptas quam velit quisquam dolorem provident nam sed, molestiae, praesentium repellat. Hic expedita delectus est repudiandae doloremque fugit sit.",
+        "Only to be logined by admins. Allows admin to control various features of the website. Manage students, assignment, college and university updates and much more.",
       link: "https://admin.gtbit.org",
       btnText: "Login",
     },
     {
       name: "Teachers Login",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate facilis voluptas quam velit quisquam dolorem provident nam sed, molestiae, praesentium repellat. Hic expedita delectus est repudiandae doloremque fugit sit.",
+        "Allows teachers to view a student, assign some task to them, update assignments, homework and much more.",
       link: "https://teacher.gtbit.org",
       btnText: "Login",
     },
     {
       name: "Students Login",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate facilis voluptas quam velit quisquam dolorem provident nam sed, molestiae, praesentium repellat. Hic expedita delectus est repudiandae doloremque fugit sit.",
+        "Login for Student of GTBIT only. Provides a platform for viewing their current record in GGSIPU. Allow them to view their assignments, homework, mark attendance, attend online classes, view their library status and much more.",
       link: "https://student.gtbit.org",
       btnText: "Login",
     },
