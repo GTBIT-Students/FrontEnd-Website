@@ -57,16 +57,16 @@ class Admissions extends Component {
                     Admission in GTBIT can be sought for in the Bachelor's of
                     Technology degree in one of the following streams:{" "}
                   </b>
-                  <br />
-                  <ul>
-                    <li>Computer Science and Engineering (180 Seats)</li>
-                    <li>Information Technology (180 Seats)</li>
-                    <li>
-                      Electronics and Communications Engineering (180 Seats)
-                    </li>
-                    <li>Electrical and Electronics Engineering(60 Seats)</li>
-                  </ul>
                 </p>
+                <br />
+                <ul>
+                  <li>Computer Science and Engineering (180 Seats)</li>
+                  <li>Information Technology (180 Seats)</li>
+                  <li>
+                    Electronics and Communications Engineering (180 Seats)
+                  </li>
+                  <li>Electrical and Electronics Engineering(60 Seats)</li>
+                </ul>
               </div>
             </div>
             <div>

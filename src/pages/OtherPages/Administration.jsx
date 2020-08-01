@@ -33,16 +33,14 @@ class Administration extends Component {
                   in the Sikh scriptures which advocate <b>SARBAT DA BHALA.</b>
                 </p>
                 <br />
-                <p>
-                  <b>Office Bearers:</b>
-                  <ul style={{ padding: "0 1em" }}>
-                    <li>President (DSGMC) : S. Manjinder Singh Sirsa</li>
-                    <li>General Secretory (DSGMC): S. Harmeet Singh Kalka</li>
-                    <li>Chairman (GTBIT) : S. Avtar Singh Hit</li>
-                    <li>Manager (GTBIT) : S. Gurmeet Singh Bhatia</li>
-                    <li>Director : Dr. Rominder Kaur Randhawa</li>
-                  </ul>
-                </p>
+                <b>Office Bearers:</b>
+                <ul style={{ padding: "0 1em" }}>
+                  <li>President (DSGMC) : S. Manjinder Singh Sirsa</li>
+                  <li>General Secretory (DSGMC): S. Harmeet Singh Kalka</li>
+                  <li>Chairman (GTBIT) : S. Avtar Singh Hit</li>
+                  <li>Manager (GTBIT) : S. Gurmeet Singh Bhatia</li>
+                  <li>Director : Dr. Rominder Kaur Randhawa</li>
+                </ul>
               </div>
             </div>
             <div>
