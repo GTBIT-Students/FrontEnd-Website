@@ -172,6 +172,7 @@ const NavBarColumns = {
           anchor: true,
         },
         { name: "Affiliated University", link: "/affiliated-university" },
+        { name: "Student Developer Team", link: "/student-developer-team" },
         // { name: "Newsletters", link: "/newsletter" },
       ],
     },
