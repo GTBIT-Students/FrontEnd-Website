@@ -6,6 +6,8 @@
   gap: 2em;
 }
 .director-page-img-1 {
+  border: 0.2em solid var(--primaryColor);
+  border-radius: 5px;
   height: 100%;
   width: 100%;
   min-height: 250px;
