@@ -1,19 +1,17 @@
-import Banner1 from "./assets/images/banner-1.jpg";
+import Banner1 from "./assets/images/banner-1_.jpg";
 import Banner2 from "./assets/images/banner-2.jpg";
 import Banner3 from "./assets/images/banner-3.jpg";
 import Banner4 from "./assets/images/banner-4.jpg";
-import Banner5 from "./assets/images/banner-5.jpg";
-import Banner6 from "./assets/images/banner-6.jpg";
-import Banner7 from "./assets/images/banner-7.jpg";
-import Banner8 from "./assets/images/banner-8.jpg";
-import Banner9 from "./assets/images/banner-9.jpg";
-import Banner10 from "./assets/images/banner-10.jpg";
-import Banner11 from "./assets/images/banner-11.jpg";
-import Banner12 from "./assets/images/banner-12.jpg";
-import Banner13 from "./assets/images/banner-13.jpg";
-import Banner14 from "./assets/images/banner-14.jpg";
-import Banner15 from "./assets/images/banner-15.jpg";
-import Banner16 from "./assets/images/banner-16.jpg";
+import Banner5 from "./assets/images/banner-6.jpg";
+import Banner6 from "./assets/images/banner-7.jpg";
+import Banner7 from "./assets/images/banner-8.jpg";
+import Banner8 from "./assets/images/banner-10.jpg";
+import Banner9 from "./assets/images/banner-11.jpg";
+import Banner10 from "./assets/images/banner-12.jpg";
+import Banner11 from "./assets/images/banner-13.jpg";
+import Banner12 from "./assets/images/banner-14.jpg";
+import Banner13 from "./assets/images/banner-15.jpg";
+import Banner14 from "./assets/images/banner-1.jpg";
 
 export const carousel = [
   { image: Banner1 },
@@ -30,6 +28,4 @@ export const carousel = [
   { image: Banner12 },
   { image: Banner13 },
   { image: Banner14 },
-  { image: Banner15 },
-  { image: Banner16 },
 ];
