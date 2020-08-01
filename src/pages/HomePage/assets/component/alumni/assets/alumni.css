@@ -5,7 +5,10 @@
 }
 
 .alumni-carousel-container {
-  height: 270px;
+  border: 0.2em solid var(--primaryColor);
+  border-radius: 5px;
+  height: 300px;
+  max-width: 800px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,15 +20,13 @@
   gap: 1em;
 }
 .alumni-name-container {
-  background: linear-gradient(
-    -160deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0) 50%
-  );
-  text-align: right;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%);
   padding: 1.5em;
   color: var(--white);
   text-shadow: 0 0 3px #000a;
+}
+.text-right {
+  text-align: right;
 }
 .alumni-name {
   font-size: 2em;
