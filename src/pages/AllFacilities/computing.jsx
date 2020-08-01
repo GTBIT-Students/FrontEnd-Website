@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Img1 from "../Departments/assets/images/img1.jpg";
+import Img2 from "../Departments/assets/images/img2.jpg";
+import Img3 from "../Departments/assets/images/img3.jpg";
 
 class ComputingFacility extends Component {
   state = {};
@@ -17,10 +20,19 @@ class ComputingFacility extends Component {
           provide reliability in case of power failure.
         </div>
         <div className="facility-page-image-container">
-          <div className="facility-page-image-1"></div>
+          <div
+            className="facility-page-image-1"
+            style={{ backgroundImage: `url(${Img1})` }}
+          ></div>
           <div className="facility-page-image-2-container">
-            <div className="facility-page-image-2"></div>
-            <div className="facility-page-image-2"></div>
+            <div
+              className="facility-page-image-2"
+              style={{ backgroundImage: `url(${Img2})` }}
+            ></div>
+            <div
+              className="facility-page-image-2"
+              style={{ backgroundImage: `url(${Img3})` }}
+            ></div>
           </div>
         </div>
         <div className="director-page-main-content">

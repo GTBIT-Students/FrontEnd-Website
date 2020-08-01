@@ -218,18 +218,18 @@ class IIPC extends Component {
           <p>For any queries, Contact:</p>
           <p className="director-page-main-content-designation">
             Mukesh Sahu
-            <br /> Head of IIPC- GTBIT,
+            <br /> HOD(IIPC-GTBIT) <br />
+            E-mail:{" "}
+            <a href="mailto:mukeshsahu@gtbit.org">mukeshsahu@gtbit.org</a>
+            <br />
+            Mobile: <a href="tel:919212425434">+91-9212425434</a>
+            <br />
             <br />
             Guru Tegh Bahadur Institute of Technology,
             <br />
             G-8 Area, Rajouri Garden,
             <br />
             New Delhi, 110064
-            <br />
-            <br />
-            E-mail: <a href="mailto:mukeshsahu@live.in">mukeshsahu@live.in</a>
-            <br />
-            Mobile: <a href="tel:919212425434">+919212425434</a>
             <br />
           </p>
         </div>
