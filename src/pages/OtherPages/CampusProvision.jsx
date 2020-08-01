@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import SideNavObj from "../../SideNavBar";
-import Lab1 from "./assets/images/img4.jpg";
+import Admin1 from "./assets/images/admin.jpg";
+import Admin2 from "./assets/images/admin2.jpg";
+import Admin3 from "./assets/images/img3.jpg";
+import Lab1 from "./assets/images/lab_block.jpg";
 import Lab2 from "./assets/images/img5.jpg";
-import Lab3 from "./assets/images/img6.jpg";
+import Lab3 from "./assets/images/img4.jpg";
 
 class CampusProvision extends Component {
   state = {};
@@ -19,10 +22,19 @@ class CampusProvision extends Component {
                   <b>Admin Block</b>
                 </p>
                 <div className="facility-page-image-container">
-                  <div className="facility-page-image-1"></div>
+                  <div
+                    className="facility-page-image-1"
+                    style={{ backgroundImage: `url(${Admin1})` }}
+                  ></div>
                   <div className="facility-page-image-2-container">
-                    <div className="facility-page-image-2"></div>
-                    <div className="facility-page-image-2"></div>
+                    <div
+                      className="facility-page-image-2"
+                      style={{ backgroundImage: `url(${Admin2})` }}
+                    ></div>
+                    <div
+                      className="facility-page-image-2"
+                      style={{ backgroundImage: `url(${Admin3})` }}
+                    ></div>
                   </div>
                 </div>
                 <p>
@@ -44,13 +56,22 @@ class CampusProvision extends Component {
                   <b>LECTURE BLOCKS</b>
                 </p>
                 <div className="facility-page-image-container">
-                  <div className="facility-page-image-1"></div>
+                  <div
+                    className="facility-page-image-1"
+                    style={{ backgroundImage: `url(${Admin1})` }}
+                  ></div>
                   <div className="facility-page-image-2-container">
-                    <div className="facility-page-image-2"></div>
-                    <div className="facility-page-image-2"></div>
+                    <div
+                      className="facility-page-image-2"
+                      style={{ backgroundImage: `url(${Lab3})` }}
+                    ></div>
+                    <div
+                      className="facility-page-image-2"
+                      style={{ backgroundImage: `url(${Lab3})` }}
+                    ></div>
                   </div>
                 </div>
-                <p>
+                <div>
                   <p>
                     Every building has a well-equipped conference/seminar hall
                     where a variety of Academic and other activities take place
@@ -69,7 +90,7 @@ class CampusProvision extends Component {
                     This block is well connected with the Admin Block as well as
                     BVS Block.
                   </p>
-                </p>
+                </div>
                 <br />
                 <p>
                   <b>LAB BLOCK</b>
