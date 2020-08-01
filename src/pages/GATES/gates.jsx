@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import SideNavObj from "../../SideNavBar";
+import Gates1 from "./assets/images/gates1.jpg";
+import Gates2 from "./assets/images/gates2.jpg";
+import Gates3 from "./assets/images/gates3.jpg";
 
 class Gates extends Component {
   state = {};
@@ -23,10 +26,19 @@ class Gates extends Component {
                 <p>GATES is the litmus test of all."</p>
               </div>
               <div className="facility-page-image-container">
-                <div className="facility-page-image-1"></div>
+                <div
+                  className="facility-page-image-1"
+                  style={{ backgroundImage: `url(${Gates1})` }}
+                ></div>
                 <div className="facility-page-image-2-container">
-                  <div className="facility-page-image-2"></div>
-                  <div className="facility-page-image-2"></div>
+                  <div
+                    className="facility-page-image-2"
+                    style={{ backgroundImage: `url(${Gates2})` }}
+                  ></div>
+                  <div
+                    className="facility-page-image-2"
+                    style={{ backgroundImage: `url(${Gates3})` }}
+                  ></div>
                 </div>
               </div>
               <div className="director-page-main-content">
