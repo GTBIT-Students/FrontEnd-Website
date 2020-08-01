@@ -188,10 +188,11 @@ class Footer extends Component {
                 Developed by{" "}
                 <Link
                   className="footer-index-links"
-                  to="#"
+                  to="/student-developer-team"
+                  onClick={closeNavBarProps}
                   style={{ fontWeight: "bold" }}
                 >
-                  Student Web Team, GTBIT
+                  Student Developer Team, GTBIT
                 </Link>
               </div>
             </div>
