@@ -1,12 +1,28 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import AlumniImg from "./assets/alumni.png";
 import closeNavBarProps from "../../../../../closeNavBarProps";
+import Harsh from "./assets/harshdeep.jpg";
+import Tapsee from "./assets/tapsee.jpg";
 import "./assets/alumni.css";
 
 class AlumniSection extends Component {
-  state = {};
+  state = {
+    alumni: [
+      {
+        name: "Tapsee Pannu",
+        designation: "Actress",
+        image: Tapsee,
+        testimonial: "",
+      },
+      {
+        name: "Harshdeep Ahuja",
+        designation: "Youtuber",
+        image: Harsh,
+        testimonial: "",
+      },
+    ],
+  };
   carouselSettings = {
     controls: false,
     pause: "hover",
@@ -24,48 +40,26 @@ class AlumniSection extends Component {
         <div>
           <Carousel {...this.carouselSettings}>
             {/* Start */}
-            <Carousel.Item>
-              <div
-                className="alumni-carousel-container"
-                style={{
-                  backgroundImage: `url(${AlumniImg})`,
-                }}
-              >
-                <div className="alumni-carousel-inner">
-                  <div className="alumni-name-container">
-                    <div className="alumni-name">Tapsi Pannu</div>
-                    <div className="alumni-work">Actress</div>
-                  </div>
-                  <div className="alumni-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iusto debitis nam harum error laudantium in molestias autem,
-                    quasi itaque. Repellat alias blanditiis iure necessitatibus
-                    minima ullam, veniam dolorem itaque ipsam.
-                  </div>
-                </div>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div
-                className="alumni-carousel-container"
-                style={{
-                  backgroundImage: `url(${AlumniImg})`,
-                }}
-              >
-                <div className="alumni-carousel-inner">
-                  <div className="alumni-name-container">
-                    <div className="alumni-name">Tapsi Pannu</div>
-                    <div className="alumni-work">Actress</div>
-                  </div>
-                  <div className="alumni-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iusto debitis nam harum error laudantium in molestias autem,
-                    quasi itaque. Repellat alias blanditiis iure necessitatibus
-                    minima ullam, veniam dolorem itaque ipsam.
+            {this.state.alumni.map((alumni, index) => (
+              <Carousel.Item key={`Alumni-${index}`}>
+                <div
+                  className="alumni-carousel-container"
+                  style={{
+                    backgroundImage: `url(${alumni.image})`,
+                  }}
+                >
+                  <div className="alumni-carousel-inner">
+                    <div className="alumni-name-container">
+                      <div className="alumni-name">{alumni.name}</div>
+                      <div className="alumni-work">{alumni.designation}</div>
+                    </div>
+                    <div className="alumni-testimonial">
+                      {alumni.testimonial}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Carousel.Item>
+              </Carousel.Item>
+            ))}
             {/* End */}
           </Carousel>
           <div className="alumni-btn-container">
