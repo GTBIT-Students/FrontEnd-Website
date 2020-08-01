@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./assets/css/directorDesk.css";
 import downArrow from "./assets/images/down-arrow.svg";
-import DirectorImage from "./assets/images/director.jpg";
 import closeNavBarProps from "../../../../../closeNavBarProps";
+import DirectorImage from "./assets/images/director.jpg";
+import DirectorImage1 from "./assets/images/director1.jpg";
+import DirectorImage2 from "./assets/images/director2.jpg";
 
 class DirectorDesk extends Component {
   state = {};
@@ -19,11 +21,11 @@ class DirectorDesk extends Component {
             <div className="director-left-content-inner">
               <div
                 className="director-left-img-2"
-                style={{ backgroundImage: `url(${DirectorImage})` }}
+                style={{ backgroundImage: `url(${DirectorImage1})` }}
               ></div>
               <div
                 className="director-left-img-2"
-                style={{ backgroundImage: `url(${DirectorImage})` }}
+                style={{ backgroundImage: `url(${DirectorImage2})` }}
               ></div>
             </div>
           </div>
