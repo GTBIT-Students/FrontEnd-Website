@@ -29,30 +29,27 @@ class Library extends Component {
             users.
           </p>
           <br />
-          <p>
-            <ul style={{ listStyle: "none" }}>
-              <p className="director-page-main-content-designation">
-                Collection:
-              </p>
-              <li>• Books</li>
-              <li>• Research Journals (Print and Online) and Periodicals.</li>
-              <li>• Reference Books.</li> <li>• Magazines and News Papers.</li>
-              <li>• CD’s DVD’s etc. </li>
-            </ul>
-            <ul style={{ listStyle: "none" }}>
-              <p className="director-page-main-content-designation">
-                Library Services:
-              </p>
-              <li>• Reprographic service</li> <li>• Internet facility</li>
-              <li>
-                • Online access to selected Journals through IEEE aspp, Springer
-                Link online
-              </li>
-              <li>• Database search through OPAC and Internet</li>
-              <li>• Current Awareness Service</li> <li>• Reference Service</li>
-              <li>• ILL Service through DELNET.</li>
-            </ul>
+          <p className="director-page-main-content-designation">Collection:</p>
+          <ul style={{ listStyle: "none" }}>
+            <li>• Books</li>
+            <li>• Research Journals (Print and Online) and Periodicals.</li>
+            <li>• Reference Books.</li> <li>• Magazines and News Papers.</li>
+            <li>• CD’s DVD’s etc. </li>
+          </ul>
+
+          <p className="director-page-main-content-designation">
+            Library Services:
           </p>
+          <ul style={{ listStyle: "none" }}>
+            <li>• Reprographic service</li> <li>• Internet facility</li>
+            <li>
+              • Online access to selected Journals through IEEE aspp, Springer
+              Link online
+            </li>
+            <li>• Database search through OPAC and Internet</li>
+            <li>• Current Awareness Service</li> <li>• Reference Service</li>
+            <li>• ILL Service through DELNET.</li>
+          </ul>
           <br />
           <p className="director-page-main-content-designation">
             BOOK REQUISITION SUBMISSION DATE:

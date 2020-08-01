@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Img1 from "../Departments/assets/images/img1.jpg";
+import Img2 from "../Departments/assets/images/img5.jpg";
+import Img3 from "../Departments/assets/images/img8.jpg";
 
 class LabFacility extends Component {
   state = {};
@@ -7,10 +10,19 @@ class LabFacility extends Component {
       <>
         <h2 className="director-heading">Lab Facility</h2>
         <div className="facility-page-image-container">
-          <div className="facility-page-image-1"></div>
+          <div
+            className="facility-page-image-1"
+            style={{ backgroundImage: `url(${Img1})` }}
+          ></div>
           <div className="facility-page-image-2-container">
-            <div className="facility-page-image-2"></div>
-            <div className="facility-page-image-2"></div>
+            <div
+              className="facility-page-image-2"
+              style={{ backgroundImage: `url(${Img2})` }}
+            ></div>
+            <div
+              className="facility-page-image-2"
+              style={{ backgroundImage: `url(${Img3})` }}
+            ></div>
           </div>
         </div>
         <div className="director-page-main-content">
@@ -19,14 +31,14 @@ class LabFacility extends Component {
             12 fully equipped labs. The students have easy access to CRO, power
             supplies, function generator, trainer kits as well as relevant
             analog and digital IC in the following labs:
-            <ul>
-              <li>Analog Electronics</li> <li>Digital Electronics</li>
-              <li>Microwave Engg.</li>
-              <li> Circuits and Systems</li>
-              <li>Electrical Science Communication</li>
-              <li> Systems Telecommunication Systems</li>
-            </ul>
           </p>
+          <ul>
+            <li>Analog Electronics</li> <li>Digital Electronics</li>
+            <li>Microwave Engg.</li>
+            <li> Circuits and Systems</li>
+            <li>Electrical Science Communication</li>
+            <li> Systems Telecommunication Systems</li>
+          </ul>
           <p>
             Emphasis is given for circuit designing on the bread board.
             <br /> The other labs. of the department are :
