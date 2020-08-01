@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Achievement from "../images/achievement-1.jpg";
+import Award from "../images/award.svg";
 import "../css/photoViewer.css";
 
 class PhotoViewer extends Component {
@@ -12,7 +12,18 @@ class PhotoViewer extends Component {
           onClick={() => this.props.toggleViewer("")}
         ></div>
         <div className="photo-viewer-container">
-          <img src={Achievement} alt="Achievements" />
+          {this.props.image.isDetails ? (
+            <div className="photo-info-container">
+              {this.props.image.details}
+            </div>
+          ) : null}
+          <img src={this.props.image.image} alt="Achievements" />
+          <div
+            className="photo-viewer-help-container"
+            onClick={this.props.handleText}
+          >
+            <img src={Award} alt="Award" width="25px" />
+          </div>
         </div>
       </>
     );
