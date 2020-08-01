@@ -78,6 +78,18 @@ class ECEDepartment extends Component {
             skills and knowledge.
           </p>
         </div>
+        <div className="director-page-main-content">
+          <p className="director-page-main-content-designation">
+            Mukesh Sahu
+            <br />
+            HOD(ECE)
+            <br />
+            Mobile: <a href="tel:919212425434">+91-9212425434</a>
+            <br />
+            Email:{" "}
+            <a href="mailto:mukeshsahu@gtbit.org">mukeshsahu@gtbit.org</a>
+          </p>
+        </div>
         <div className="alumni-btn-container">
           <Link
             to="/department"
