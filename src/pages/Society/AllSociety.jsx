@@ -9,12 +9,42 @@ import "./assets/css/allSociety.css";
 
 class AllSociety extends Component {
   state = {
-    society: {
-      technical: [],
-      cultural: [],
-      religious: [],
-      miscellaneous: [],
-    },
+    society: [],
+    isFilter: 0,
+    isLoaded: false,
+  };
+
+  society = [];
+
+  toggleFilter = (filter) => {
+    this.setState({ isFilter: filter });
+    if (filter === 0) {
+      this.setState({ society: this.society });
+    } else if (filter === 1) {
+      let temp = [];
+      this.society.forEach((data) => {
+        if (data.category === "technical") temp.push(data);
+      });
+      this.setState({ society: temp });
+    } else if (filter === 2) {
+      let temp = [];
+      this.society.forEach((data) => {
+        if (data.category === "religious") temp.push(data);
+      });
+      this.setState({ society: temp });
+    } else if (filter === 3) {
+      let temp = [];
+      this.society.forEach((data) => {
+        if (data.category === "cultural") temp.push(data);
+      });
+      this.setState({ society: temp });
+    } else if (filter === 4) {
+      let temp = [];
+      this.society.forEach((data) => {
+        if (data.category === "miscellaneous") temp.push(data);
+      });
+      this.setState({ society: temp });
+    }
   };
 
   componentDidMount = () => {
@@ -25,243 +55,110 @@ class AllSociety extends Component {
         Authorization: `Token ${API_Domain.API_Token}`,
       },
     }).then((data) => {
-      let society = {
-        technical: [],
-        cultural: [],
-        religious: [],
-        miscellaneous: [],
-      };
-      data.data.society_list.map((elmt) => {
-        if (elmt.category === "technical") {
-          society.technical.push(elmt);
-        } else if (elmt.category === "cultural") {
-          society.cultural.push(elmt);
-        } else if (elmt.category === "religious") {
-          society.religious.push(elmt);
-        } else {
-          society.miscellaneous.push(elmt);
-        }
-        return null;
-      });
-      this.setState({ society: society });
+      this.society = data.data.society_list;
+      this.setState({ society: data.data.society_list, isLoaded: true });
     });
   };
 
   render() {
     return (
       <>
-        <div className="single-society-heading-container">
-          <div className="single-society-heading" id="technical">
-            Societies
+        <h2 className="director-heading">Societies in the college</h2>
+        <div className="filter-container">
+          <div
+            className={`filter-content ${
+              this.state.isFilter === 0 ? "filter-active" : ""
+            }`}
+            onClick={() => this.toggleFilter(0)}
+          >
+            All
+          </div>
+          <div
+            className={`filter-content ${
+              this.state.isFilter === 1 ? "filter-active" : ""
+            }`}
+            onClick={() => this.toggleFilter(1)}
+          >
+            Technical
+          </div>
+          <div
+            className={`filter-content ${
+              this.state.isFilter === 2 ? "filter-active" : ""
+            }`}
+            onClick={() => this.toggleFilter(2)}
+          >
+            Religious
+          </div>
+          <div
+            className={`filter-content ${
+              this.state.isFilter === 3 ? "filter-active" : ""
+            }`}
+            onClick={() => this.toggleFilter(3)}
+          >
+            Cultural
+          </div>
+          <div
+            className={`filter-content ${
+              this.state.isFilter === 4 ? "filter-active" : ""
+            }`}
+            onClick={() => this.toggleFilter(4)}
+          >
+            Miscellaneous
           </div>
         </div>
-        <div className="all-society-container">
-          <div className="singleSociety-main-header">Technical Societies</div>
-          {/* Start */}
-          {this.state.society.technical.length !== 0 ? (
-            <div className="all-society-inner-container">
-              {this.state.society.technical.map((elmt, index) => (
-                <div key={`society_${index}`}>
-                  <div className="all-society-view-box">
-                    <div className="all-society-image-head-container">
-                      <div className="justifyCenter">
-                        <div
-                          className="all-society-image-inner"
-                          style={{ backgroundImage: `url(${elmt.logo})` }}
-                        ></div>
+        {this.state.isLoaded ? (
+          <div className="all-society-grid">
+            {/* Start */}
+            {this.state.society.length ? (
+              <>
+                {this.state.society.map((society, index) => (
+                  <div key={`society-${index}`} className="all-society-content">
+                    <div
+                      className="all-society-images"
+                      style={{ backgroundImage: `url(${society.logo})` }}
+                    >
+                      <div className="all-society-images-overlay">
+                        <div></div>
+                        <div className="all-society-name">{society.name}</div>
                       </div>
-                      <div className="all-society-header-inner">
-                        <div className="text-center-mobile">
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            className="all-society-society-name"
-                            onClick={closeNavBarProps}
-                          >
-                            {elmt.name}
-                          </Link>
-                          <div className="all-society-society-tagline">
-                            {elmt.tag_line}
-                          </div>
-                          <div className="all-society-society-tagline">
-                            Lead: <b>{elmt.student_incharge}</b>
-                          </div>
-                          <div className="all-society-society-tagline">
-                            Incharge: <b>{elmt.teacher_incharge}</b>
-                          </div>
+                    </div>
+                    <div className="all-society-content-inner">
+                      <div className="all-society-tagline">
+                        {society.tag_line}
+                      </div>
+                      <div>
+                        Student Lead:{" "}
+                        <div className="all-society-lead">
+                          {society.student_incharge}
                         </div>
-                        <div className="all-society-know-more">
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            onClick={closeNavBarProps}
-                          >
-                            Know More
-                          </Link>
+                      </div>
+                      <div>
+                        Incharge:{" "}
+                        <div className="all-society-lead">
+                          {society.teacher_incharge}
                         </div>
+                      </div>
+                      <div className="all-society-margin">
+                        <Link
+                          to={`/society/${society.slug}`}
+                          onClick={closeNavBarProps}
+                          className="all-society-know-more"
+                        >
+                          Know More
+                        </Link>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="spacing-5">
-              <Loader />
-            </div>
-          )}
-          {/* End */}
-        </div>
-        <div className="spacing-3" id="religious"></div>
-        <div className="all-society-container">
-          <div className="singleSociety-main-header">Religous Societies</div>
-          {/* Start */}
-          {this.state.society.religious.length !== 0 ? (
-            <div className="all-society-inner-container">
-              {this.state.society.religious.map((elmt) => (
-                <>
-                  <div className="all-society-view-box">
-                    <div className="all-society-image-head-container">
-                      <div className="justifyCenter">
-                        <div
-                          className="all-society-image-inner"
-                          style={{ backgroundImage: `url(${elmt.logo})` }}
-                        ></div>
-                      </div>
-                      <div className="all-society-header-inner">
-                        <div>
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            className="all-society-society-name"
-                            onClick={closeNavBarProps}
-                          >
-                            {elmt.name}
-                          </Link>
-                          <div className="all-society-society-tagline">
-                            {elmt.tag_line}
-                          </div>
-                        </div>
-                        <div className="all-society-know-more">
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            onClick={closeNavBarProps}
-                          >
-                            Know More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </div>
-          ) : (
-            <div className="spacing-5">
-              <Loader />
-            </div>
-          )}
-          {/* End */}
-        </div>
-        <div className="spacing-3" id="cultural"></div>
-        <div className="all-society-container">
-          <div className="singleSociety-main-header">Cultural Societies</div>
-          {/* Start */}
-          {this.state.society.cultural.length !== 0 ? (
-            <div className="all-society-inner-container">
-              {this.state.society.cultural.map((elmt) => (
-                <>
-                  <div className="all-society-view-box">
-                    <div className="all-society-image-head-container">
-                      <div className="justifyCenter">
-                        <div
-                          className="all-society-image-inner"
-                          style={{ backgroundImage: `url(${elmt.logo})` }}
-                        ></div>
-                      </div>
-                      <div className="all-society-header-inner">
-                        <div>
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            className="all-society-society-name"
-                            onClick={closeNavBarProps}
-                          >
-                            {elmt.name}
-                          </Link>
-                          <div className="all-society-society-tagline">
-                            {elmt.tag_line}
-                          </div>
-                        </div>
-                        <div className="all-society-know-more">
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            onClick={closeNavBarProps}
-                          >
-                            Know More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </div>
-          ) : (
-            <div className="spacing-5">
-              <Loader />
-            </div>
-          )}
-          {/* End */}
-        </div>
-        <div className="spacing-3" id="miscellaneous"></div>
-        <div className="all-society-container">
-          <div className="singleSociety-main-header">
-            Miscellaneous Societies
+                ))}
+              </>
+            ) : (
+              <h3>No Society :(</h3>
+            )}
+            {/* End */}
           </div>
-          {/* Start */}
-          {this.state.society.miscellaneous.length !== 0 ? (
-            <div className="all-society-inner-container">
-              {this.state.society.miscellaneous.map((elmt) => (
-                <>
-                  <div className="all-society-view-box">
-                    <div className="all-society-image-head-container">
-                      <div className="justifyCenter">
-                        <div
-                          className="all-society-image-inner"
-                          style={{ backgroundImage: `url(${elmt.logo})` }}
-                        ></div>
-                      </div>
-                      <div className="all-society-header-inner">
-                        <div>
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            className="all-society-society-name"
-                            onClick={closeNavBarProps}
-                          >
-                            {elmt.name}
-                          </Link>
-                          <div className="all-society-society-tagline">
-                            {elmt.tag_line}
-                          </div>
-                        </div>
-                        <div className="all-society-know-more">
-                          <Link
-                            to={`/society/${elmt.slug}`}
-                            onClick={closeNavBarProps}
-                          >
-                            Know More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </div>
-          ) : (
-            <div className="spacing-5">
-              <Loader />
-            </div>
-          )}
-          {/* End */}
-        </div>
+        ) : (
+          <Loader />
+        )}
       </>
     );
   }
