@@ -20,30 +20,27 @@ class MissionAim extends Component {
                   through sustained team efforts,involving all stakeholders in
                   the institute.
                 </p>
-                <p>
-                  <b>Our Mission</b>
-                  <br />
-                  <ul style={{ padding: "0 1em" }}>
-                    <li>
-                      To create an environment of collaboration,
-                      experimentation, imagination and creativity.
-                    </li>
-                    <li>To provide the best possible education facilities.</li>
-                    <li>
-                      To develop sensitivity in our students to be responsible
-                      citizens of the nation to think in the direction of
-                      improving the quality of life and meeting society needs.
-                    </li>
-                    <li>
-                      To link studies with contemporary industry developments
-                      and applications.
-                    </li>
-                    <li>
-                      To imbibe national values leading to student's
-                      empowerment.
-                    </li>
-                  </ul>
-                </p>
+                <b>Our Mission</b>
+                <br />
+                <ul style={{ padding: "0 1em" }}>
+                  <li>
+                    To create an environment of collaboration, experimentation,
+                    imagination and creativity.
+                  </li>
+                  <li>To provide the best possible education facilities.</li>
+                  <li>
+                    To develop sensitivity in our students to be responsible
+                    citizens of the nation to think in the direction of
+                    improving the quality of life and meeting society needs.
+                  </li>
+                  <li>
+                    To link studies with contemporary industry developments and
+                    applications.
+                  </li>
+                  <li>
+                    To imbibe national values leading to student's empowerment.
+                  </li>
+                </ul>
                 <p>
                   Also, To work as a unified team to leverage the inherent
                   creative and professional skills of the students and further

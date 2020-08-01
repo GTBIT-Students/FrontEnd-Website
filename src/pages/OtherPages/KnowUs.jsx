@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import SideNavObj from "../../SideNavBar";
-import Img1 from "./assets/images/img1.jpg";
-import Img2 from "./assets/images/img2.jpg";
+import Img1 from "./assets/images/admin.jpg";
+import Img2 from "./assets/images/admin2.jpg";
 import Img3 from "./assets/images/img3.jpg";
 
 class KnowUs extends Component {
@@ -75,7 +75,7 @@ class KnowUs extends Component {
                   the institute.
                 </p>
                 <br />
-                <p>
+                <div>
                   <b>Office bearers:</b>
                   <br />
                   <ul>
@@ -83,7 +83,7 @@ class KnowUs extends Component {
                     <li>Manager (GTBIT) : S. Gurmeet Singh Bhatia</li>
                     <li>Director : Dr. Rominder Kaur Randhawa</li>
                   </ul>
-                </p>
+                </div>
               </div>
             </div>
             <div>
