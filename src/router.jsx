@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import axios from "axios";
 import API_Domain from "./baseDomain";
-
-import "./assets/css/default.css";
 
 import SideNavObj from "./SideNavBar";
 import UpperNoticeBar from "./components/UpperNoticeBar/UpperNoticeBar";
@@ -30,27 +28,19 @@ import IIPC from "./pages/AllFacilities/iipc";
 import Library from "./pages/AllFacilities/library";
 import LabFacility from "./pages/AllFacilities/lab";
 
-// Departments
 import AllDepartments from "./pages/Departments/allDeparment";
 import CS from "./pages/Departments/CS";
 import IT from "./pages/Departments/IT";
 import ECE from "./pages/Departments/ECE";
 import EEE from "./pages/Departments/EEE";
-// Departments
 
-// Programme
 import allProgrammes from "./pages/Programmes/allProgrammes";
 import CSProgram from "./pages/Programmes/CS";
 import ITProgram from "./pages/Programmes/IT";
 import ECEProgram from "./pages/Programmes/ECE";
 import EEEProgram from "./pages/Programmes/EEE";
-// Programme
 
-// Gates
 import Gates from "./pages/GATES/gates";
-// Gates
-
-// Other Pages
 import PrivacyPolicy from "./pages/OtherPages/PrivacyPolicy";
 import CodeOfConduct from "./pages/OtherPages/CodeOfConduct";
 import AffiliatedUniversity from "./pages/OtherPages/AffiliatedUniversity";
@@ -73,7 +63,9 @@ import Calendar from "./pages/Examination/Calendar";
 import AlumniList from "./pages/Alumni/almuniList";
 import SingleEvent from "./pages/Event/SingleEvent";
 import AllEvent from "./pages/Event/AllEvent";
-// Other Pages
+import StudentTeam from "./pages/StudentTeam/StudentTeam";
+
+import "./assets/css/default.css";
 
 class Routes extends Component {
   state = {
@@ -100,27 +92,45 @@ class Routes extends Component {
         <UpperNoticeBar notice={this.state.upper_notice[0].notice} />
         <NavigationBar />
         <Switch>
+          {/* Old Routes */}
+          <Route exact path="/contact.php">
+            <Redirect to="/contact-us" />
+          </Route>
+          <Route exact path="/placements.php">
+            <Redirect to="/placements" />
+          </Route>
+          <Route exact path="/admission.php">
+            <Redirect to="/admissions" />
+          </Route>
+          <Route exact path="/knowus.php">
+            <Redirect to="/know-us" />
+          </Route>
+          <Route
+            exact
+            path="/downloads.php"
+            render={() =>
+              (window.location = "https://archives.gtbit.org/downloads.php")
+            }
+          />
+          <Route
+            exact
+            path="/login.php"
+            render={() => (window.location = "https://student.gtbit.org")}
+          />
+          {/* Old Routes */}
+
           {/* Home Page */}
           <Route exact path="/">
             <Home information={this.state} />
           </Route>
-          {/* Home Page */}
-
-          {/* Director Desk */}
           <Route exact path="/director-message" component={DirectorMessage} />
-          {/* Director Desk */}
-
-          {/* GTBIT 360 */}
           <Route exact path="/virtual-tour" component={GTBIT360} />
-          {/* GTBIT 360 */}
-
-          {/* Important Links */}
+          <Route exact path="/gates" component={Gates} />
+          <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/important-links">
             <AllImportantLink innerLinks={this.state.link} />
           </Route>
-          {/* Important Links */}
 
-          {/* Facilities */}
           <Route path="/facilities">
             <div className="container-big">
               <div className="single-society-container-grid">
@@ -150,9 +160,7 @@ class Routes extends Component {
               </div>
             </div>
           </Route>
-          {/* Facilities */}
 
-          {/* Notices */}
           <Route path="/notice">
             <div className="container-big">
               <div className="single-society-container-grid">
@@ -172,9 +180,7 @@ class Routes extends Component {
               </div>
             </div>
           </Route>
-          {/* Notices */}
 
-          {/* Events */}
           <Route path="/event">
             <div className="container-big">
               <div className="single-society-container-grid">
@@ -194,9 +200,7 @@ class Routes extends Component {
               </div>
             </div>
           </Route>
-          {/* Events */}
 
-          {/* Deparments */}
           <Route path="/department">
             <div className="container-big">
               <div className="single-society-container-grid">
@@ -229,9 +233,7 @@ class Routes extends Component {
               </div>
             </div>
           </Route>
-          {/* Deparments */}
 
-          {/* Programmes */}
           <Route path="/programs">
             <div className="container-big">
               <div className="single-society-container-grid">
@@ -264,25 +266,13 @@ class Routes extends Component {
               </div>
             </div>
           </Route>
-          {/* Programmes */}
 
-          {/* Gates FEST */}
-          <Route exact path="/gates" component={Gates} />
-          {/* Gates FEST */}
-
-          {/* Gallery */}
-          <Route exact path="/gallery" component={Gallery} />
-          {/* Gallery */}
-
-          {/* Examination */}
           <Route path="/examination">
             <Route exact path="/examination/result" component={Result} />
             <Route exact path="/examination/schedule" component={Schedule} />
             <Route exact path="/examination/calendar" component={Calendar} />
           </Route>
-          {/* Examination */}
 
-          {/* Society */}
           <Route path="/society">
             <div className="container-big">
               <div className="single-society-container-grid">
@@ -300,9 +290,8 @@ class Routes extends Component {
               </div>
             </div>
           </Route>
-          {/* Society */}
 
-          {/* Other Pages */}
+          <Route exact path="/student-developer-team" component={StudentTeam} />
           <Route exact path="/alumni" component={AlumniList} />
           <Route exact path="/privacy-policy" component={PrivacyPolicy} />
           <Route exact path="/code-of-conduct" component={CodeOfConduct} />
@@ -327,11 +316,7 @@ class Routes extends Component {
           <Route exact path="/contact-us" component={ContactUs} />
           <Route exact path="/newsletter" component={Newsletter} />
 
-          {/* Other Pages */}
-
-          {/* Error 404 */}
           <Route component={Error404Page} />
-          {/* Error 404 */}
         </Switch>
         <Footer />
       </>
