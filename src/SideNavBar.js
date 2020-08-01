@@ -60,6 +60,10 @@ const SideNavObj = {
         name: "Know Us",
         link: "/know-us",
       },
+      {
+        name: "Student Developer Team",
+        link: "/student-developer-team",
+      },
     ],
   },
   SideEventNotice: {
