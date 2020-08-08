@@ -1,0 +1,23 @@
+.single-society-carousel {
+  margin: 2em auto;
+  width: max-content;
+}
+.carouselInnerContent-society {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 165px;
+  width: 300px;
+}
+@media screen and (min-width: 800px) {
+  .carouselInnerContent-society {
+    height: 250px;
+    width: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carouselInnerContent-society {
+    height: 400px;
+    width: 710px;
+  }
+}

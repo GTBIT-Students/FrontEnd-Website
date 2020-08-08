@@ -1,0 +1,20 @@
+.single-notice-heading {
+  color: var(--white);
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+.notice-prior-detail {
+  margin: 1em 0;
+}
+
+@media screen and (min-width: 800px) {
+  .single-notice-main-content {
+    padding: 1em 0;
+    font-size: 1.05em;
+  }
+  .single-notice-heading {
+    font-size: 1.5em;
+  }
+}

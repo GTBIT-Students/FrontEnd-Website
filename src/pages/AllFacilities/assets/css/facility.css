@@ -1,0 +1,34 @@
+.facility-page-image-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin: 2em 0;
+}
+.facility-page-image-1,
+.facility-page-image-2 {
+  height: 100%;
+  width: 100%;
+  min-height: 250px;
+  background-color: #ddd;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  border: 0.2em solid var(--primaryColor);
+}
+.facility-page-image-2-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+}
+@media screen and (min-width: 992px) {
+  .facility-page-image-container {
+    height: 400px;
+    grid-template-columns: 2fr 1fr;
+  }
+  .facility-page-image-1,
+  .facility-page-image-2 {
+    min-height: 0;
+  }
+}

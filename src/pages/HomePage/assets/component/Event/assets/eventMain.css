@@ -1,0 +1,46 @@
+.event-main-slick-container {
+  max-width: 450px;
+  margin: 0 1em;
+}
+.event-slick-con {
+  border-left: 0.3em solid var(--primaryColor);
+  padding-left: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin: 0.5em 0;
+  transition: 0.5s;
+}
+.event-slick-con:hover {
+  background-color: var(--white);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1);
+}
+.event-main-image {
+  height: 100px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: #eee;
+}
+.event-main-date {
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: var(--white);
+}
+a.eventMain-link {
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+  .event-main-slick-container {
+    width: 450px;
+  }
+  .event-slick-con {
+    grid-template-columns: auto 1fr;
+  }
+}

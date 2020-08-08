@@ -1,0 +1,40 @@
+.SideNavPane {
+  position: sticky;
+  top: 75px;
+  padding: 1em;
+  width: 100%;
+  /* background-color: #e7f1ff; */
+  border-radius: 10px;
+}
+.SideNavPane-heading {
+  font-size: 1.5em;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  margin-bottom: 1em;
+  color: var(--secondaryColor);
+}
+.SideNavPane-heading::after {
+  content: "";
+  background-color: #ccc;
+  height: 1px;
+  width: 100%;
+  display: block;
+}
+a.SideNavPane-content {
+  transition: 0.5s ease-in-out;
+  padding: 0.5em;
+  display: block;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0.4em 0;
+}
+.SideNavPane-content:hover {
+  background-color: var(--white);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1);
+}
+
+@media screen and (min-width: 1200px) {
+  .SideNavPane {
+    width: 350px;
+  }
+}

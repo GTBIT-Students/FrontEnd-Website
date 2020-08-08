@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+  --primaryColor: #fcc419;
+  --secondaryColor: #e8590c;
+  --secondaryToned: #fe7018;
+  --white: #ffffff;
+  --black: #212529;
+  --blue: #1a73e8;
+  --lightShadow: rgba(0, 0, 0, 0.15);
+}
+a.carousel-control-next {
+  background: linear-gradient(to right, #0000, #0005);
+  transition: 0.5s;
+}
+a.carousel-control-prev {
+  background: linear-gradient(to right, #0005, #0000);
+  transition: 0.5s;
+}
+.carousel-caption {
+  background: linear-gradient(to right, #0000, #0001, #0000);
+}
+
+.spacing-5 {
+  padding: 2.5em 0;
+}
+.spacing-3 {
+  padding: 1em 0;
+}
+.container-big {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container-big {
+    width: 735px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-big {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-big {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .container-big {
+    width: 1320px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .container-big {
+    width: 1420px;
+  }
+}

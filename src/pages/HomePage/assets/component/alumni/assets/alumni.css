@@ -1,0 +1,81 @@
+.alumni-container-grid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 2em;
+}
+
+.alumni-carousel-container {
+  border: 0.2em solid var(--primaryColor);
+  border-radius: 5px;
+  height: 300px;
+  max-width: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.alumni-carousel-inner {
+  display: grid;
+  height: 100% !important;
+  grid-template-rows: 1fr auto;
+  gap: 1em;
+}
+.alumni-name-container {
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%);
+  padding: 1.5em;
+  color: var(--white);
+  text-shadow: 0 0 3px #000a;
+}
+.text-right {
+  text-align: right;
+}
+.alumni-name {
+  font-size: 2em;
+}
+.alumni-work {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+.alumni-testimonial {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1em 0.5em;
+  text-shadow: 0 0 2px #000;
+  font-size: 1.1em;
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0)); */
+  color: var(--white);
+  padding-bottom: 2.5em;
+}
+.alumni-btn-container {
+  margin: 2em 0;
+}
+a.alumni-button {
+  padding: 0.5em 1.5em;
+  border: 0.2em solid var(--secondaryColor);
+  background-color: var(--secondaryColor);
+  color: var(--white);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+a.alumni-button:hover {
+  background: var(--white);
+  border-color: var(--secondaryColor);
+  color: var(--secondaryColor);
+}
+
+@media screen and (min-width: 1200px) {
+  .alumni-carousel-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .alumni-testimonial {
+    padding: 2em;
+  }
+  .alumni-carousel-container {
+    height: 440px;
+  }
+}

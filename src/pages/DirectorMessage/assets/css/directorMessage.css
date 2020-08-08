@@ -1,0 +1,42 @@
+.director-page-image-container {
+  width: 100%;
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+.director-page-img-1 {
+  border: 0.2em solid var(--primaryColor);
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  min-height: 250px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.director-quote {
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1.2em;
+}
+.director-page-main-content {
+  font-size: 1.2em;
+  margin: 2em 0;
+  letter-spacing: 0.05em;
+  text-align: justify;
+}
+.director-page-main-content-designation {
+  font-weight: bold;
+}
+.director-page-main-content a {
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+@media screen and (min-width: 992px) {
+  .director-page-image-container {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

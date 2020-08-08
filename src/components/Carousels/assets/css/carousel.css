@@ -1,0 +1,28 @@
+.CarouselUpperSpacing {
+  padding: 2.5em 0;
+}
+.carouselInnerContent {
+  height: calc(100vh - 138px);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0.2rem solid var(--primaryColor);
+}
+
+@media screen and (max-width: 800px) {
+  .carouselInnerContent {
+    height: 400px;
+  }
+  .CarouselUpperSpacing {
+    padding: 2em 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carouselInnerContent {
+    height: 300px;
+  }
+  .CarouselUpperSpacing {
+    padding: 1em 0;
+  }
+}
