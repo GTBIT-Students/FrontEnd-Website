@@ -165,6 +165,9 @@ a.nav-bar-login-btn {
   }
 }
 @media screen and (max-width: 800px) {
+  .navbar-discover-content {
+    width: initial;
+  }
   .navbar-login-heading {
     cursor: pointer;
   }

@@ -17,13 +17,21 @@ class Footer extends Component {
               <div className="footer-index-1">
                 <div className="footer-index-1-inner-grid">
                   <div className="justify-center">
-                    <img src={GTBIT_LOGO} width="100px" alt="GTBIT Logo" />
+                    <Link to="/" onClick={closeNavBarProps}>
+                      <img src={GTBIT_LOGO} width="100px" alt="GTBIT Logo" />
+                    </Link>
                   </div>
-                  <div
-                    className="justify-center"
-                    style={{ color: "var(--primaryColor)" }}
-                  >
-                    Guru Tegh Bahadur Institute Of Technology
+                  <div className="justify-center">
+                    <Link
+                      to="/"
+                      onClick={closeNavBarProps}
+                      style={{
+                        color: "var(--primaryColor)",
+                        textDecoration: "none",
+                      }}
+                    >
+                      Guru Tegh Bahadur Institute Of Technology
+                    </Link>
                   </div>
                 </div>
                 <div className="footer-index-1-content">
@@ -92,7 +100,7 @@ class Footer extends Component {
                 <div className="footer-links-container">
                   <div className="footer-links-headers">Other Links</div>
                   <ul style={{ margin: "0 0.5em" }}>
-                    <li>
+                    {/* <li>
                       <a
                         href="https://student.gtbit.org"
                         className="footer-index-links"
@@ -107,6 +115,22 @@ class Footer extends Component {
                       >
                         Portal for teachers
                       </a>
+                    </li> */}
+                    <li>
+                      <Link
+                        to="/mission-and-aim"
+                        className="footer-index-links"
+                      >
+                        Mission and Aim
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/vision-and-core-values"
+                        className="footer-index-links"
+                      >
+                        Vision and Core Values
+                      </Link>
                     </li>
                     <li>
                       <a

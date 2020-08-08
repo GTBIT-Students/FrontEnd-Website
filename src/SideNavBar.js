@@ -1,3 +1,5 @@
+import DepartmentImg from "./pages/Departments/assets/images/img1.jpeg";
+
 const SideNavObj = {
   Society: {
     heading: "Explore Socities",
@@ -138,19 +140,28 @@ const SideNavObj = {
     elements: [
       {
         name: "Computer Science",
+        image: DepartmentImg,
         link: "/department/computer-science",
       },
       {
         name: "Information Technology",
+        image: DepartmentImg,
         link: "/department/information-technology",
       },
       {
         name: "Electronics and Communication",
+        image: DepartmentImg,
         link: "/department/electronics-and-communication",
       },
       {
         name: "Electrical and Electronics",
+        image: DepartmentImg,
         link: "/department/electrical-and-electronics",
+      },
+      {
+        name: "Applied Science and Humanities",
+        image: DepartmentImg,
+        link: "/department/applied-science-and-humanities",
       },
     ],
   },
@@ -159,18 +170,22 @@ const SideNavObj = {
     elements: [
       {
         name: "Computer Science",
+        image: DepartmentImg,
         link: "/programs/computer-science",
       },
       {
         name: "Information Technology",
+        image: DepartmentImg,
         link: "/programs/information-technology",
       },
       {
         name: "Electronics and Communication",
+        image: DepartmentImg,
         link: "/programs/electronics-and-communication",
       },
       {
         name: "Electrical and Electronics",
+        image: DepartmentImg,
         link: "/programs/electrical-and-electronics",
       },
     ],
@@ -180,22 +195,27 @@ const SideNavObj = {
     elements: [
       {
         name: "Medical Counsellor",
+        image: DepartmentImg,
         link: "/facilities/medical-counsellor",
       },
       {
         name: "Lab Rooms",
+        image: DepartmentImg,
         link: "/facilities/lab",
       },
       {
         name: "Library and Book Bank",
+        image: DepartmentImg,
         link: "/facilities/library-and-book-bank",
       },
       {
         name: "Computing Facility",
+        image: DepartmentImg,
         link: "/facilities/computing-facility",
       },
       {
         name: "The IIPC",
+        image: DepartmentImg,
         link: "/facilities/iipc",
       },
     ],

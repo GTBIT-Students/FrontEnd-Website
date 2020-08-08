@@ -33,6 +33,7 @@ import CS from "./pages/Departments/CS";
 import IT from "./pages/Departments/IT";
 import ECE from "./pages/Departments/ECE";
 import EEE from "./pages/Departments/EEE";
+import ASAH from "./pages/Departments/ASAH";
 
 import allProgrammes from "./pages/Programmes/allProgrammes";
 import CSProgram from "./pages/Programmes/CS";
@@ -225,6 +226,11 @@ class Routes extends Component {
                     exact
                     path="/department/electrical-and-electronics"
                     component={EEE}
+                  />
+                  <Route
+                    exact
+                    path="/department/applied-science-and-humanities"
+                    component={ASAH}
                   />
                 </div>
                 <div>

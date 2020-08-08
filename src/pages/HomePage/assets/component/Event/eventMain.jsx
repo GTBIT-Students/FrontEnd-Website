@@ -16,7 +16,7 @@ class EventMain extends Component {
     arrows: false,
     autoplay: true,
     touchMove: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 13000,
     slidesToScroll: 3,
     vertical: true,
   };

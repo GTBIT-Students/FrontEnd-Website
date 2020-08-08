@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import closeNavBarProps from "../../closeNavBarProps";
-import EEE1 from "./assets/images/img5.jpg";
-import EEE2 from "./assets/images/img6.jpg";
-import EEE3 from "./assets/images/img7.jpg";
+import EEE1 from "./assets/images/img10.jpg";
+import EEE2 from "./assets/images/img11.jpg";
+import EEE3 from "./assets/images/img9.jpg";
 
 class EEEDepartment extends Component {
   state = {};
@@ -83,6 +83,19 @@ class EEEDepartment extends Component {
             (IES), various national/international level project competitions
             along with high selection rate in admission to post graduate courses
             in top international universities abroad.
+          </p>
+        </div>
+
+        <div className="director-page-main-content">
+          <p className="director-page-main-content-designation">
+            Dr. Deepali Sharma
+            <br />
+            HOD (EEE)
+            <br />
+            Mobile: <a href="tel:919212365617">+91-9212365617</a>
+            <br />
+            Email:{" "}
+            <a href="mailto:deepalisharma@gtbit.org">deepalisharma@gtbit.org</a>
           </p>
         </div>
         <div className="alumni-btn-container">

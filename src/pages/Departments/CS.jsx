@@ -19,7 +19,8 @@ class CSDepartment extends Component {
             the college and caters to the needs of other departments as well.
           </p>
           <p>
-            This department has got 450 Computers with the latest configuration.
+            This department has got 450 Computers with the latest I-7
+            configuration.
           </p>
         </h4>
         <div className="single-department-content-container-1">
@@ -86,6 +87,17 @@ class CSDepartment extends Component {
               internet facilities. Student computer ratio is 1:1.
             </li>
           </ul>
+        </div>
+        <div className="director-page-main-content">
+          <p className="director-page-main-content-designation">
+            Dr. Ashish Bhardwaj
+            <br />
+            HOD (CSE)
+            <br />
+            Mobile: <a href="tel:919868093474">+91-9868093474</a>
+            <br />
+            Email: <a href="mailto:aashish@gtbit.org">aashish@gtbit.org</a>
+          </p>
         </div>
         <div className="alumni-btn-container">
           <Link

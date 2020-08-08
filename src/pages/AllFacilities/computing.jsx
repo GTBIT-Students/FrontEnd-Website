@@ -14,7 +14,7 @@ class ComputingFacility extends Component {
           Programming labs, Operating Systems lab, Internet and Networking labs,
           Electronics Computer Aided Design lab and the Multimedia lab. The labs
           are equipped with 550 machines of latest configuration. The recent
-          developments include installation of two hundred new P-IV computers in
+          developments include installation of two hundred new I-7 computers in
           the labs. All the labs are internally networked and inter-connected to
           each other to form a LAN. The centre has twelve 6 KVA UPS (72 KVA) to
           provide reliability in case of power failure.
@@ -44,7 +44,7 @@ class ComputingFacility extends Component {
             of the labs Wi-Fi is enabled). These labs meet the basic
             requirements of the 1st and 2nd year students of all the three
             streams. Programming skills in languages such as C, C++, Java, Data
-            Structures, AutoCad and ComputermGraphics are imparted to the
+            Structures, AutoCad and Computer Graphics are imparted to the
             students. Students are also made familiar with the basic application
             tools such as MS-Office, PhotoShop, DOS, etc.
           </p>

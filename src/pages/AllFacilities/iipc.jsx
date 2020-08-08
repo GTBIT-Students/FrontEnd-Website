@@ -20,8 +20,7 @@ class IIPC extends Component {
           industry practices, and hone their skills to adapt changing
           technologies. The primary focus of IIPC is to interact with elite
           industries in Delhi and NCR, and extend the efforts in establishing
-          partnership with industries across the country in near future. We are
-          fortunate to have Mr. Mukesh Sahu as the Head of IIPC.
+          partnership with industries across the country in near future.
         </div>
         <div className="facility-page-image-container">
           <div className="facility-page-image-1"></div>

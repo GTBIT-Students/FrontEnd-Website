@@ -17,7 +17,7 @@ class NoticeMain extends Component {
     arrows: false,
     autoplay: true,
     touchMove: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     slidesToScroll: 3,
     vertical: true,
   };

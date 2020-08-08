@@ -15,7 +15,7 @@ class LinkMain extends Component {
     arrows: false,
     autoplay: true,
     touchMove: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 7000,
     slidesToScroll: 4,
     vertical: true,
   };

@@ -84,6 +84,17 @@ class ITDepartment extends Component {
             </li>
           </ul>
         </div>
+        <div className="director-page-main-content">
+          <p className="director-page-main-content-designation">
+            P. S. Bedi
+            <br />
+            HOD (IT)
+            <br />
+            Mobile: <a href="tel:919818778755">+91-9818778755</a>
+            <br />
+            Email: <a href="mailto:psbedi@gtbit.org">psbedi@gtbit.org</a>
+          </p>
+        </div>
         <div className="alumni-btn-container">
           <Link
             to="/department"

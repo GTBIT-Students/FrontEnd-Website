@@ -4,7 +4,7 @@ import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import SideNavObj from "../../SideNavBar";
 
 import "../Society/assets/css/allSociety.css";
-import "./assets/css/AllImportantLink.css";
+// import "./assets/css/AllImportantLink.css";
 
 class AllSociety extends Component {
   state = {};

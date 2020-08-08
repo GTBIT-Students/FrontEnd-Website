@@ -82,7 +82,7 @@ class ECEDepartment extends Component {
           <p className="director-page-main-content-designation">
             Mukesh Sahu
             <br />
-            HOD(ECE)
+            HOD (ECE)
             <br />
             Mobile: <a href="tel:919212425434">+91-9212425434</a>
             <br />

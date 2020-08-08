@@ -32,20 +32,24 @@ const NavBarColumns = {
       name: "Departments",
       columns: [
         {
-          name: "Computer Science Department",
+          name: "Computer Science and Engineering",
           link: "/department/computer-science",
         },
         {
-          name: "Information Technology Department",
+          name: "Information Technology",
           link: "/department/information-technology",
         },
         {
-          name: "Electronics and Communication Department",
+          name: "Electronics and Communication",
           link: "/department/electronics-and-communication",
         },
         {
-          name: "Electrical and Electronics Department",
+          name: "Electrical and Electronics",
           link: "/department/electrical-and-electronics",
+        },
+        {
+          name: "Applied Science and Humanities",
+          link: "/department/applied-science-and-humanities",
         },
       ],
     },
@@ -106,14 +110,14 @@ const NavBarColumns = {
         },
       ],
     },
-    {
-      name: "Academics",
-      columns: [
-        { name: "Examination Schedule", link: "/examination/schedule" },
-        { name: "Exam Results", link: "/examination/result" },
-        { name: "Academic Calendar", link: "/examination/calendar" },
-      ],
-    },
+    // {
+    //   name: "Academics",
+    //   columns: [
+    //     { name: "Examination Schedule", link: "/examination/schedule" },
+    //     { name: "Exam Results", link: "/examination/result" },
+    //     { name: "Academic Calendar", link: "/examination/calendar" },
+    //   ],
+    // },
     {
       name: "Societies",
       columns: [
@@ -155,20 +159,28 @@ const NavBarColumns = {
         { name: "Admissions", link: "/admissions" },
         {
           name: "Mandatory Disclosure",
-          link: "https://gtbit.org/assets/mandatory_disclosure.pdf",
+          link: "https://archives.gtbit.org/assets/mandatory_disclosure.pdf",
           anchor: true,
         },
         { name: "Photo Gallery", link: "/gallery" },
         { name: "Contact Us", link: "/contact-us" },
+        {
+          name: "Spoken Tutorials",
+          link: "https://spoken-tutorial.org",
+          anchor: true,
+        },
       ],
     },
     {
       name: "Other Information",
       columns: [
-        { name: "Online Fee Payment", link: "/online-fee-payment" },
+        {
+          name: "Online Fee Payment",
+          link: "/notice/notice-for-the-last-date-of-fee-payment-is-extended",
+        },
         {
           name: "Download Brochure",
-          link: "https://gtbit.org/assets/brochure.pdf",
+          link: "https://archives.gtbit.org/assets/brochure.pdf",
           anchor: true,
         },
         { name: "Affiliated University", link: "/affiliated-university" },
