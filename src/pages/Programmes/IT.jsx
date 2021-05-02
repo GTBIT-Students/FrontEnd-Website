@@ -19,6 +19,15 @@ class ITProgram extends Component {
             strategies.
           </p>
         </h4>
+        <div className="container-responsive">
+          <iframe
+            title="IT"
+            className="video-responsive"
+            src=""
+            frameborder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
         <div className="single-department-content-container-1">
           <div
             className="single-department-image-1"
@@ -83,6 +92,17 @@ class ITProgram extends Component {
               internet facilities. Student computer ratio is 1:1.
             </li>
           </ul>
+        </div>
+        <div className="director-page-main-content">
+          <p className="director-page-main-content-designation">
+            P. S. Bedi
+            <br />
+            HOD (IT)
+            <br />
+            Mobile: <a href="tel:919818778755">+91-9818778755</a>
+            <br />
+            Email: <a href="mailto:psbedi@gtbit.org">psbedi@gtbit.org</a>
+          </p>
         </div>
         <div className="alumni-btn-container">
           <Link

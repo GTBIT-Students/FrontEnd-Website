@@ -34,6 +34,7 @@ import IT from "./pages/Departments/IT";
 import ECE from "./pages/Departments/ECE";
 import EEE from "./pages/Departments/EEE";
 import ASAH from "./pages/Departments/ASAH";
+import EXAMINATION from "./pages/Departments/EXAMINATION";
 
 import allProgrammes from "./pages/Programmes/allProgrammes";
 import CSProgram from "./pages/Programmes/CS";
@@ -65,7 +66,8 @@ import AlumniList from "./pages/Alumni/almuniList";
 import SingleEvent from "./pages/Event/SingleEvent";
 import AllEvent from "./pages/Event/AllEvent";
 import StudentTeam from "./pages/StudentTeam/StudentTeam";
-
+import Popup from "./components/Popup/Popup";
+import Fee from "./pages/OtherPages/Fee";
 import "./assets/css/default.css";
 
 class Routes extends Component {
@@ -90,6 +92,7 @@ class Routes extends Component {
   render() {
     return (
       <>
+        <Popup />
         <UpperNoticeBar notice={this.state.upper_notice[0].notice} />
         <NavigationBar />
         <Switch>
@@ -232,6 +235,11 @@ class Routes extends Component {
                     path="/department/applied-science-and-humanities"
                     component={ASAH}
                   />
+                  <Route
+                    exact
+                    path="/department/examination"
+                    component={EXAMINATION}
+                  />
                 </div>
                 <div>
                   <SideNavPane content={SideNavObj.Deparments} />
@@ -321,6 +329,7 @@ class Routes extends Component {
           <Route exact path="/admissions" component={Admissions} />
           <Route exact path="/contact-us" component={ContactUs} />
           <Route exact path="/newsletter" component={Newsletter} />
+          <Route exact path="/fee" component={Fee} />
 
           <Route component={Error404Page} />
         </Switch>

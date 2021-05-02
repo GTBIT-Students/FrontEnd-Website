@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./assets/css/uppernoticebar.css";
 
 class UpperNoticeBar extends Component {
@@ -33,7 +34,15 @@ class UpperNoticeBar extends Component {
                             </>
                           ) : (
                             <div className="upper-notice-announcements-notice-inner">
-                              {this.props.notice}
+                              <Link
+                                to="/notice/new-admission-2020"
+                                style={{
+                                  color: "var(--black)",
+                                  textDecoration: "none",
+                                }}
+                              >
+                                {this.props.notice}
+                              </Link>
                             </div>
                           )}
                         </div>

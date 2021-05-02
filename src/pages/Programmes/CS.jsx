@@ -18,9 +18,19 @@ class CSProgram extends Component {
             the college and caters to the needs of other departments as well.
           </p>
           <p>
-            This department has got 450 Computers with the latest configuration.
+            This department has got 450 Computers with the latest I-7
+            configuration.
           </p>
         </h4>
+        <div className="container-responsive">
+          <iframe
+            title="CSE"
+            className="video-responsive"
+            src="https://www.youtube.com/embed/4WB-qN9lHAE"
+            frameborder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
         <div className="single-department-content-container-1">
           <div
             className="single-department-image-1"
@@ -28,7 +38,7 @@ class CSProgram extends Component {
           ></div>
           <div className="single-department-content justifyCenter">
             Engineering Department involves basic sciences and engineering
-            subjects at the 1st year level. In the 2nd and 3rd year the core
+            subjects at the 1st year level.In the 2nd and 3rd year the core
             courses of Computer Science and Engineering like Data Structure,
             Foundation of Computer Science, Computer Graphics, Operating
             Systems, Computer Architecture, Networking, DBMS, Multimedia
@@ -85,6 +95,17 @@ class CSProgram extends Component {
               internet facilities. Student computer ratio is 1:1.
             </li>
           </ul>
+        </div>
+        <div className="director-page-main-content">
+          <p className="director-page-main-content-designation">
+            Dr. Ashish Bhardwaj
+            <br />
+            HOD (CSE)
+            <br />
+            Mobile: <a href="tel:919868093474">+91-9868093474</a>
+            <br />
+            Email: <a href="mailto:aashish@gtbit.org">aashish@gtbit.org</a>
+          </p>
         </div>
         <div className="alumni-btn-container">
           <Link

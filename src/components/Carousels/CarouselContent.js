@@ -13,6 +13,10 @@ import Banner11 from "./assets/images/banner-13.jpg";
 import Banner12 from "./assets/images/banner-14.jpg";
 import Banner13 from "./assets/images/banner-15.jpg";
 import Banner14 from "./assets/images/banner-1.jpg";
+import Banner20 from "./assets/images/banner-20.jpeg";
+import Banner21 from "./assets/images/banner-21.jpeg";
+import Banner22 from "./assets/images/banner-22.jpeg";
+import Banner23 from "./assets/images/banner-23.jpeg";
 
 export const carousel = [
   { image: Banner1 },
@@ -29,5 +33,9 @@ export const carousel = [
   { image: Banner12 },
   { image: Banner4 },
   { image: Banner13 },
+  { image: Banner20 },
+  { image: Banner21 },
+  { image: Banner22 },
+  { image: Banner23 },
   { image: Banner14 },
 ];

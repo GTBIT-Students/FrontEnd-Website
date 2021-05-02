@@ -19,6 +19,15 @@ class ITDepartment extends Component {
             strategies.
           </p>
         </h4>
+        <div className="container-responsive">
+          <iframe
+            title="IT"
+            className="video-responsive"
+            src=""
+            frameborder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
         <div className="single-department-content-container-1">
           <div
             className="single-department-image-1"

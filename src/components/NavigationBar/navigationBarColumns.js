@@ -17,7 +17,8 @@ const NavBarColumns = {
           name: "Computing Facilities",
           link: "/facilities/computing-facility",
         },
-        { name: "Labs Rooms", link: "/facilities/lab" },
+        { name: "Electronics Lab", link: "/facilities/lab" },
+        // { name: "Labs Rooms", link: "/facilities/lab" },
         {
           name: "Library and Book Bank",
           link: "/facilities/library-and-book-bank",
@@ -51,15 +52,20 @@ const NavBarColumns = {
           name: "Applied Science and Humanities",
           link: "/department/applied-science-and-humanities",
         },
+        {
+          name: "Examination",
+          link: "/department/examination",
+        },
       ],
     },
     {
       name: "Important Links",
       columns: [
+        { name: "Admissions", link: "/admissions" },
         { name: "Placements", link: "/placements" },
         { name: "Achievements", link: "/achievements" },
         { name: "Know Us", link: "/know-us" },
-        { name: "Student Grievance", link: "/student-grievance" },
+        { name: "Fee Information", link: "/fee" },
       ],
     },
     {
@@ -124,6 +130,7 @@ const NavBarColumns = {
         { name: "Technical Societies", link: "/society/#technical" },
         { name: "Cultural Societies", link: "/society/#cultural" },
         { name: "Religious Societies", link: "/society/#religious" },
+        { name: "Sport Society", link: "/society" },
         { name: "More Societies", link: "/society/#miscellaneous" },
       ],
     },
@@ -156,12 +163,12 @@ const NavBarColumns = {
     {
       name: "Other Links",
       columns: [
-        { name: "Admissions", link: "/admissions" },
         {
           name: "Mandatory Disclosure",
           link: "https://archives.gtbit.org/assets/mandatory_disclosure.pdf",
           anchor: true,
         },
+        { name: "Student Grievance", link: "/student-grievance" },
         { name: "Photo Gallery", link: "/gallery" },
         { name: "Contact Us", link: "/contact-us" },
         {

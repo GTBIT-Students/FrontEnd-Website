@@ -103,7 +103,7 @@ class AllSociety extends Component {
             }`}
             onClick={() => this.toggleFilter(4)}
           >
-            Miscellaneous
+            Sports
           </div>
         </div>
         {this.state.isLoaded ? (

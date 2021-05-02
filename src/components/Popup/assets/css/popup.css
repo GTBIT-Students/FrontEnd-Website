@@ -1,0 +1,71 @@
+.popup-overlay {
+  background: #0006;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+}
+.popup-container {
+  border: 0.5rem solid #fff;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  z-index: 999;
+  max-width: 1000px;
+  width: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-heading {
+  font-size: 2rem;
+  color: #555;
+  text-shadow: 0 0 5px #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.popup-sub-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #555;
+  text-shadow: 0 0 5px #fff;
+}
+.popup-content {
+  color: #555;
+  text-shadow: 0 0 2px #fff;
+  text-align: center;
+}
+.popup-grid {
+  max-height: 40vh;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.popup-content-student {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.popup-name {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .popup-heading {
+    font-size: 3rem;
+  }
+  .popup-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .popup-name {
+    font-size: 2rem;
+  }
+}

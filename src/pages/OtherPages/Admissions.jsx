@@ -60,12 +60,19 @@ class Admissions extends Component {
                 </p>
                 <br />
                 <ul>
-                  <li>Computer Science and Engineering (180 Seats)</li>
-                  <li>Information Technology (180 Seats)</li>
                   <li>
-                    Electronics and Communications Engineering (180 Seats)
+                    Computer Science and Engineering - 120 Seats (Morning Batch)
+                    + 60 Seats (Evening)
                   </li>
-                  <li>Electrical and Electronics Engineering(60 Seats)</li>
+                  <li>
+                    Information Technology - 120 Seats (Morning Batch) + 60
+                    Seats (Evening)
+                  </li>
+                  <li>
+                    Electronics and Communications Engineering - 120
+                    Seats(Morning Batch) + 60 Seats (Evening)
+                  </li>
+                  <li>Electrical and Electronics Engineering - 60 Seats</li>
                 </ul>
               </div>
             </div>

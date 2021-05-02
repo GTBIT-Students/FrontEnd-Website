@@ -14,7 +14,7 @@ class Placements extends Component {
               <div className="director-page-main-content">
                 <p>
                   <b>
-                    CAREER DEVELOPMENT AND MANAGEMENT CELL/ TRAINING and
+                    CAREER DEVELOPMENT AND MANAGEMENT CELL / TRAINING and
                     PLACEMENT DEPARTMENT
                   </b>
                 </p>
@@ -27,6 +27,15 @@ class Placements extends Component {
                   Cell (CDMC) / Training and Placement Department of this
                   Institute runs.
                 </p>
+                <div className="container-responsive">
+                  <iframe
+                    title="IT"
+                    className="video-responsive"
+                    src="https://www.youtube.com/embed/Kx36_KbMlTE"
+                    frameborder="0"
+                    allowFullScreen
+                  ></iframe>
+                </div>
                 <br />
                 <p>
                   The Career Development Management Cell (CDMC)/ T&amp;P Dept is

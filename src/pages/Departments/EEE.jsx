@@ -20,6 +20,15 @@ class EEEDepartment extends Component {
             highest caliber ever since it was established in the year 2006.
           </p>
         </h4>
+        <div className="container-responsive">
+          <iframe
+            title="EEE"
+            className="video-responsive"
+            src="https://www.youtube.com/embed/Athrv8E_Avs"
+            frameborder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
         <div className="single-department-content-container-1">
           <div
             className="single-department-image-1"

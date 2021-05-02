@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import medical from "./assets/medical1.jpeg";
 import "./assets/css/facility.css";
 
 class MedicalCounsellor extends Component {
@@ -8,11 +9,14 @@ class MedicalCounsellor extends Component {
       <>
         <h2 className="director-heading">Medical Counsellor</h2>
         <div className="facility-page-image-container">
-          <div className="facility-page-image-1"></div>
-          <div className="facility-page-image-2-container">
+          <div
+            className="facility-page-image-1"
+            style={{ backgroundImage: `url(${medical})` }}
+          ></div>
+          {/* <div className="facility-page-image-2-container">
             <div className="facility-page-image-2"></div>
             <div className="facility-page-image-2"></div>
-          </div>
+          </div> */}
         </div>
         <div className="director-page-main-content">
           <p></p>

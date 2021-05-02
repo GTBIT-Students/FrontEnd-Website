@@ -4,6 +4,7 @@ import SideNavPane from "../../components/SideNavPane/SideNavPane";
 import API_Domain from "../../baseDomain";
 import Loader from "../../components/Loader/loader";
 import SideNavObj from "../../SideNavBar";
+import "./assets/css/alumni.css";
 
 class AlumniList extends Component {
   state = {
@@ -55,6 +56,37 @@ class AlumniList extends Component {
                 ) : (
                   <Loader />
                 )}
+              </div>
+              <br />
+              <h2 className="director-heading">Alumni speaks</h2>
+              <div className="alumni-speaks-grid">
+                <div className="container-responsive">
+                  <iframe
+                    title="ASAH"
+                    className="video-responsive"
+                    src="https://www.youtube.com/embed/JSzGteJ-snY"
+                    frameborder="0"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="container-responsive">
+                  <iframe
+                    title="ASAH"
+                    className="video-responsive"
+                    src="https://www.youtube.com/embed/RUTvCbvs5S4"
+                    frameborder="0"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="container-responsive">
+                  <iframe
+                    title="ASAH"
+                    className="video-responsive"
+                    src="https://www.youtube.com/embed/aw9hgmuwjzE"
+                    frameborder="0"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
               <br />
               <p className="director-page-main-content-designation">

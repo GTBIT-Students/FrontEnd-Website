@@ -54,6 +54,20 @@ class Achievements extends Component {
         <div className="container-big">
           <div className="single-society-container-grid">
             <div>
+              <h2 className="director-heading">Wall of Fame</h2>
+              <div className="director-page-main-content">
+                <div class="container-responsive">
+                  <iframe
+                    title="GTBIT Achievements"
+                    src="https://www.youtube.com/embed/VLwPu1FEr9o"
+                    frameborder="0"
+                    allowfullscreen
+                    class="video-responsive"
+                  ></iframe>
+                </div>
+              </div>
+              <br />
+              <br />
               <h2 className="director-heading">Achievements</h2>
               <div className="director-page-main-content">
                 {this.state.achievement.length ? (

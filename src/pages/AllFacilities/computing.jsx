@@ -80,19 +80,6 @@ class ComputingFacility extends Component {
             base.
           </p>
         </div>
-        <div className="director-page-main-content">
-          <p className="director-page-main-content-designation">
-            Electronics Computer Aided Design Lab:
-          </p>
-          <p>
-            This lab is well equipped with the latest software available for
-            Electronic Circuit Design. Licensed 5.2 version of Mentra Graphics
-            (FPGA) advantage along with TINA PRO are a regular part of the
-            curriculum for the third semester and upwards. Apart from this,
-            ORCAD and Matlab 6.1 version is also available for various signal
-            processing, PCB designing, fuzzy logic conrol, Neural Network etc.
-          </p>
-        </div>
       </>
     );
   }

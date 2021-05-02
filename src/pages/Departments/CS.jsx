@@ -23,6 +23,15 @@ class CSDepartment extends Component {
             configuration.
           </p>
         </h4>
+        <div className="container-responsive">
+          <iframe
+            title="CSE"
+            className="video-responsive"
+            src="https://www.youtube.com/embed/4WB-qN9lHAE"
+            frameborder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
         <div className="single-department-content-container-1">
           <div
             className="single-department-image-1"

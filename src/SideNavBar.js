@@ -109,6 +109,10 @@ const SideNavObj = {
         link: "/know-us",
       },
       {
+        name: "Fee Information",
+        link: "/fee",
+      },
+      {
         name: "Student Grievance",
         link: "/student-grievance",
       },
@@ -162,6 +166,11 @@ const SideNavObj = {
         name: "Applied Science and Humanities",
         image: DepartmentImg,
         link: "/department/applied-science-and-humanities",
+      },
+      {
+        name: "Examination",
+        image: DepartmentImg,
+        link: "/department/examination",
       },
     ],
   },

@@ -8,11 +8,14 @@ import Linkedin from "./assets/images/linkedin.svg";
 import Github from "./assets/images/github.svg";
 import Raghav from "./assets/images/raghavdhingra.jpg";
 import Jayant from "./assets/images/jayant.jpg";
-import Sachin from "./assets/images/sachin.jpeg";
+import Sachin from "./assets/images/sachin.jpg";
 import Pulkit from "./assets/images/pulkit.jpg";
+import Karanveer from "./assets/images/karanveer.jpg";
 import Ashima from "./assets/images/ashima.jpg";
 import Ashita from "./assets/images/ashita.jpg";
 import Akshit from "./assets/images/akshit.jpg";
+import Nanak from "./assets/images/nanak.jpg";
+import Japneet from "./assets/images/japneet.jpg";
 import "./assets/css/studentTeam.css";
 
 class StudentTeam extends Component {
@@ -33,6 +36,14 @@ class StudentTeam extends Component {
         github: "https://github.com/negi-sachin",
         linkedin: "https://www.linkedin.com/in/negi-sachin/",
         facebook: "https://www.facebook.com/sachin.negi.9275439",
+      },
+      {
+        image: Karanveer,
+        name: "Karanveer Singh",
+        designation: "Management",
+        website: "mailto:kvssandhu@live.in",
+        github: "https://github.com/kvssandhu",
+        twitter: "https://twitter.com/kvssandhu",
       },
       {
         image: Jayant,
@@ -67,12 +78,28 @@ class StudentTeam extends Component {
         website: "mailto:aashimabajaj2@gmail.com",
       },
       {
+        image: Japneet,
+        name: "Japneet Singh Sethi",
+        designation: "Graphic Designer",
+        github: "https://github.com/designedcode",
+        linkedin: "https://www.linkedin.com/in/japneet-singh-029537190/",
+        website: "mailto:japneet.aiesec@gmail.com",
+      },
+      {
         image: Akshit,
         name: "Akshit Mittal",
         designation: "Graphic Designer",
         twitter: "https://twitter.com/Akshit91303134",
         linkedin: "https://www.linkedin.com/in/akshit-mittal-190a1b150",
         facebook: "https://www.facebook.com/akshit.mittal.94 ",
+      },
+      {
+        image: Nanak,
+        name: "Nanak Singh Khurana",
+        designation: "Cyber Security",
+        github: "https://github.com/nanak-singh",
+        linkedin: "https://www.linkedin.com/in/nanak-singh-khurana/",
+        website: "mailto:mr.nanakskhurana@gmail.com ",
       },
     ],
   };
